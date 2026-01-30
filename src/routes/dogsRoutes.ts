@@ -22,6 +22,7 @@ router.get('/', (req, res) => {
   }
 })
 router.get('/search', searchController.search);
+router.get('/home', pageController.home);
 router.get('/:id', pageController.details);
 
 export default router;
