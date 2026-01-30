@@ -1,7 +1,6 @@
 import { Request, Response } from "express";
 import { getDogs } from "../models/dog";
 import z from "zod";
-import { details } from "./pageController";
 
 const searchSchema = z.object({
   q: z.string().min(2, "A busca precisa ter pelo menos 2 caracteres"),

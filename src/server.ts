@@ -23,6 +23,13 @@ server.use(cors({
   }
 }));
 
+server.get('/', (req, res) => {
+  res.json({
+    status: 'online',
+    message: 'DogsInfos API is running',
+  });
+});
+
 server.use(indexRoutes);
 server.use(notFoundRequest);
 server.use(errorHandler);

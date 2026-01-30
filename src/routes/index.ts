@@ -5,6 +5,6 @@ import { middleware } from "./middleware";
 const router = express.Router();
 
 router.use(middleware);
-router.use('/', dogsRoutes)
+router.use('/dogs', dogsRoutes);
 
 export default router;

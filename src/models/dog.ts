@@ -497,8 +497,8 @@ const data: dogData[] = [
 ];
 
 export const getDogs = {
-  getAll: (): dogData[] => {
-    return data;
+  getAll: (offset: number, limit: number): dogData[] => {
+    return data.slice(offset, offset + limit);
   },
   getFromBreed: (breed: string): dogData[] => {
     return data.filter(i => i.breed.toLowerCase().indexOf(breed.toLowerCase()) > -1)
