@@ -27,6 +27,12 @@ server.get('/', (req, res) => {
   res.json({
     status: 'online',
     message: 'DogsInfos API is running',
+    endpoints: {
+      dogs: '/dogs',
+      search: '/dogs/search?breed=nome',
+      home: '/dogs/home?breed=nome&color=cor&country=pais&size=tamanho&page=1&limit=20',
+      details: '/dogs/:id'
+    }
   });
 });
 

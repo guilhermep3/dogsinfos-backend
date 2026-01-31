@@ -2,14 +2,14 @@ import { Request, Response } from "express";
 import { getDogs } from "../models/dog";
 
 interface QueryFilters {
-  size?: string;
+  breed?: string;
   color?: string;
   country?: string;
-  breed?: string;
+  size?: string;
 }
 export const home = (req: Request, res: Response) => {
   try {
-    const { size, color, country, breed } = req.query as QueryFilters;
+    const { breed, color, country, size } = req.query as QueryFilters;
 
     const page = Math.max(1, parseInt(req.query.page as string) || 1);
     const limit = parseInt(req.query.limit as string) || 20;
@@ -22,12 +22,6 @@ export const home = (req: Request, res: Response) => {
       const formattedBreed = breed.toLowerCase().trim();
       filteredDogs = getDogs.getFromBreed(formattedBreed);
     }
-    if (size) {
-      const formattedSize = size.toLowerCase().trim();
-      filteredDogs = filteredDogs.filter(d =>
-        d.size.toLowerCase() === formattedSize.toLowerCase()
-      );
-    }
     if (color && typeof color === 'string') {
       const formattedColor = color.toLowerCase().trim();
       filteredDogs = filteredDogs.filter(d =>
@@ -38,6 +32,12 @@ export const home = (req: Request, res: Response) => {
       const formattedCountry = country.toLowerCase().trim();
       filteredDogs = filteredDogs.filter(d =>
         d.countryOrigin.toLowerCase() === formattedCountry.toLowerCase()
+      );
+    }
+    if (size) {
+      const formattedSize = size.toLowerCase().trim();
+      filteredDogs = filteredDogs.filter(d =>
+        d.size.toLowerCase() === formattedSize.toLowerCase()
       );
     }
 
