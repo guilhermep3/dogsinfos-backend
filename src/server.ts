@@ -5,9 +5,12 @@ import indexRoutes from "./routes";
 import { errorHandler, notFoundRequest } from "./routes/errorHandler";
 import cors from 'cors';
 
+const allowedOrigins = [
+  'http://localhost:3000', 'https://dogsinfos.vercel.app'
+];
+
 const server = express();
 const port = process.env.PORT || 3001;
-const allowedOrigins = ['http://localhost:3000', 'https://dogsinfos.vercel.app'];
 
 server.use(helmet());
 server.use(express.json());
