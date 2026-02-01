@@ -16,7 +16,15 @@ router.get('/', (req, res) => {
     const offset = (page - 1) * finalLimit;
 
     const dogs = getDogs.getAll(offset, finalLimit);
-    res.json(dogs);
+    const total = getDogs.getDogsCount();
+
+    const totalPages = Math.ceil(total / finalLimit);
+
+    res.json({
+      page,
+      totalPages,
+      dogs
+    });
   } catch (error) {
     res.status(500).json({ error: 'Erro interno do servidor' });
   }

@@ -514,5 +514,8 @@ export const getDogs = {
   },
   getFromId: (id: number): dogData => {
     return data.find(i => i.id === id)!;
+  },
+  getDogsCount: () => {
+    return data.length;
   }
 }
