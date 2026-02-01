@@ -36,12 +36,41 @@ src/
 
 ## 🛣️ Rotas da API
 
-| Método   | Rota                    | Descrição           |
-|----------|-------------------------|---------------------|
-| `GET`    | `/dogs?page=1&limit=10` | `Retorna todos os dados dos cachorros`|
-| `GET`    | `/dogs/search?breed=raca` | `Retorna a pesquisa da raça`|
-| `GET`    | `/dogs/home` | `Retorna os dados com filtragem de breed, color, country, size via query`|
-| `GET`    | `/dogs/:id` | `Retorna os dados de um cachorro`|
+| Método | Rota | Descrição |
+|--------|------|-----------|
+| `GET` | `/` | Informações da API |
+| `GET` | `/dogs?page=1&limit=20` | Lista paginada de cachorros |
+| `GET` | `/dogs/search?breed=nome` | Busca por raça específica |
+| `GET` | `/dogs/home?breed=&color=&country=&size=&page=1&limit=20` | Filtra cachorros (aceita múltiplos filtros) |
+| `GET` | `/dogs/:id` | Retorna dados de um cachorro específico |
+
+## 🛣️ Exemplos de retorno das rotas
+
+- **/dogs**:
+```bash
+[
+  {
+    "id": 1,
+    "breed": "Labrador Retriever",
+    "image": "labrador_retriever.jpg",
+    "size": "Médio",
+    "countryOrigin": "Canadá",
+    "colors": [
+      "Preto",
+      "Marrom",
+      "Caramelo"
+    ],
+    "lifeExpectancy": "10 a 12 anos",
+    "adultWeightKg": "25 a 36 kg",
+    "classification": [
+        "Companhia",
+        "Assistência"
+    ],
+    "description": "O Labrador é dócil, brincalhão e inteligente, ideal para famílias ativas. Vive bem em casas com quintal e adora água e brincadeiras ao ar livre."
+  },
+  # outros dados
+]
+```
 
 ## Comandos de execução
 
@@ -51,7 +80,6 @@ src/
 
 ## ⚙️ Pré-requisitos
 - Node.js (versão 18+)
-- PostgreSQL (versão 12+)
 - npm ou yarn
 
 ## Instalação
@@ -65,4 +93,9 @@ cd dogsinfos-backend
 Instale as dependências
 ``` bash
 npm install
+```
+
+Configure as variáveis de ambiente
+``` bash
+cp .env.example .env
 ```

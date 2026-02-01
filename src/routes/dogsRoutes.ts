@@ -14,7 +14,7 @@ router.get('/', (req, res) => {
     const finalLimit = limit > maxLimit ? maxLimit : limit;
 
     const offset = (page - 1) * finalLimit;
-  
+
     const dogs = getDogs.getAll(offset, finalLimit);
     res.json(dogs);
   } catch (error) {
