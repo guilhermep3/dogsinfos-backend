@@ -65,7 +65,7 @@ export const details = (req: Request, res: Response) => {
       return;
     }
 
-    res.json({ data: dog });
+    res.json(dog);
   } catch (error) {
     res.status(500).json({ error: 'Erro interno do servidor' });
   }
