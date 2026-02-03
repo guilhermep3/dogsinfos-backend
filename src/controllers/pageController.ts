@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import { getDogs } from "../models/dog";
+import { getDogs } from "../models/dog.js";
 
 interface QueryFilters {
   breed?: string;

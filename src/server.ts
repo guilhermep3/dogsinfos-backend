@@ -2,7 +2,7 @@ import express from "express";
 import helmet from "helmet";
 import path from "path";
 import indexRoutes from "./routes";
-import { errorHandler, notFoundRequest } from "./routes/errorHandler";
+import { errorHandler, notFoundRequest } from "./routes/errorHandler.js";
 import cors from 'cors';
 
 const allowedOrigins = [

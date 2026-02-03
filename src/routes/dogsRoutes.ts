@@ -1,7 +1,7 @@
 import express from "express";
-import { getDogs } from "../models/dog";
-import * as searchController from "../controllers/searchController";
-import * as pageController from "../controllers/pageController";
+import { getDogs } from "../models/dog.js";
+import * as searchController from "../controllers/searchController.js";
+import * as pageController from "../controllers/pageController.js";
 
 const router = express.Router();
 

@@ -1,5 +1,5 @@
 import express from "express";
-import dogsRoutes from "./dogsRoutes"
+import dogsRoutes from "./dogsRoutes.js";
 
 const router = express.Router();
 

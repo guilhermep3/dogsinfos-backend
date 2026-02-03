@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import { getDogs } from "../models/dog";
+import { getDogs } from "../models/dog.js";
 
 export const search = (req: Request, res: Response) => {
   try {
