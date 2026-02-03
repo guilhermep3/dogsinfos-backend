@@ -10,7 +10,7 @@
     "module": "esnext",
     "moduleResolution": "node",
     "target": "es2023",
-    "types": [],
+    "types": ["node"],
     // For nodejs:
     // "lib": ["esnext"],
     // "types": ["node"],
@@ -36,9 +36,8 @@
     // Recommended Options
     "strict": true,
     "esModuleInterop": true,
-    "jsx": "react-jsx",
     "verbatimModuleSyntax": false,
-    "isolatedModules": true,
+    // "isolatedModules": true,
     "noUncheckedSideEffectImports": true,
     "moduleDetection": "force",
     "skipLibCheck": true,

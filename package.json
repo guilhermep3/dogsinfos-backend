@@ -4,7 +4,7 @@
   "description": "",
   "license": "ISC",
   "author": "",
-  "type": "commonjs",
+  "type": "module",
   "main": "index.js",
   "engines": {
     "node": "22.x"
@@ -17,7 +17,7 @@
   "devDependencies": {
     "@types/cors": "^2.8.19",
     "@types/express": "^5.0.3",
-    "@types/node": "^24.0.4",
+    "@types/node": "^24.10.10",
     "ts-node": "^10.9.2",
     "tsx": "^4.20.3",
     "typescript": "^5.9.3"
