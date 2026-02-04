@@ -1,9 +1,9 @@
 import express from "express";
 import helmet from "helmet";
 import path from "path";
-import indexRoutes from "./routes";
 import { errorHandler, notFoundRequest } from "./routes/errorHandler.js";
 import cors from 'cors';
+import mainRoutes from "./routes/main.js";
 
 const allowedOrigins = [
   'http://localhost:3000', 'https://dogsinfos.vercel.app'
@@ -39,7 +39,7 @@ server.get('/', (req, res) => {
   });
 });
 
-server.use(indexRoutes);
+server.use(mainRoutes);
 server.use(notFoundRequest);
 server.use(errorHandler);
 
