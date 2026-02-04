@@ -1,9 +1,13 @@
 import express from "express";
 import helmet from "helmet";
 import path from "path";
+import { fileURLToPath } from "url";
 import { errorHandler, notFoundRequest } from "./routes/errorHandler.js";
 import cors from 'cors';
 import mainRoutes from "./routes/main.js";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const allowedOrigins = [
   'http://localhost:3000', 'https://dogsinfos.vercel.app'
