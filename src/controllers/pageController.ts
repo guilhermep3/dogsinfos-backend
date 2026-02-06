@@ -41,7 +41,11 @@ export const home = (req: Request, res: Response) => {
       );
     }
 
-    res.json(filteredDogs.slice((page - 1) * finalLimit, page * finalLimit));
+    res.json({
+      dogs: filteredDogs.slice((page - 1) * finalLimit, page * finalLimit),
+      page,
+      totalPages: Math.ceil(filteredDogs.length / finalLimit)
+    });
   } catch (error) {
     res.status(500).json({ error: 'Erro interno do servidor' });
   }
