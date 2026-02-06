@@ -3,6 +3,7 @@ import { getDogs } from "../models/dog.js";
 
 interface QueryFilters {
   breed?: string[];
+  classification?: string[];
   color?: string[];
   country?: string[];
   size?: string[];
@@ -10,7 +11,7 @@ interface QueryFilters {
 
 export const home = (req: Request, res: Response) => {
   try {
-    const { breed, color, country, size } = req.query as QueryFilters;
+    const { breed, classification, color, country, size } = req.query as QueryFilters;
 
     const page = Math.max(1, parseInt(req.query.page as string) || 1);
     const limit = parseInt(req.query.limit as string) || 20;
@@ -28,6 +29,7 @@ export const home = (req: Request, res: Response) => {
     };
 
     const breeds = parseQueryParam(breed);
+    const classifications = parseQueryParam(classification);
     const colors = parseQueryParam(color);
     const countries = parseQueryParam(country);
     const sizes = parseQueryParam(size);
@@ -36,6 +38,13 @@ export const home = (req: Request, res: Response) => {
       filteredDogs = filteredDogs.filter(d => {
         return breeds.includes(d.breed.toLowerCase());
       })
+    }
+    if (classifications.length > 0) {
+      filteredDogs = filteredDogs.filter(dog =>
+        dog.classification.some(c =>
+          classifications.includes(c.toLowerCase())
+        )
+      );
     }
     if (colors.length > 0) {
       filteredDogs = filteredDogs.filter(d => {
