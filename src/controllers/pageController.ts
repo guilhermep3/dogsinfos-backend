@@ -18,7 +18,9 @@ export const home = (req: Request, res: Response) => {
     const maxLimit = 100;
     const finalLimit = Math.min(limit, maxLimit);
 
-    let filteredDogs = getDogs.getAll(0, Infinity);
+    const allDogs = getDogs.getAll(0, Infinity);
+    
+    let filteredDogs = [...allDogs];
 
     const parseQueryParam = (param: any): string[] => {
       if (!param) return [];
@@ -47,14 +49,14 @@ export const home = (req: Request, res: Response) => {
       );
     }
     if (colors.length > 0) {
-      filteredDogs = filteredDogs.filter(d => {
-        return d.colors.some(c => colors.includes(c.toLowerCase()));
-      })
+      filteredDogs = filteredDogs.filter(dog =>
+        dog.colors.some(c => colors.includes(c.toLowerCase()))
+      );
     }
     if (countries.length > 0) {
-      filteredDogs = filteredDogs.filter(d => {
-        return countries.includes(d.countryOrigin.toLowerCase());
-      })
+      filteredDogs = filteredDogs.filter(dog =>
+        countries.includes(dog.countryOrigin.toLowerCase())
+      );
     }
     if (sizes.length > 0) {
       filteredDogs = filteredDogs.filter(d => {
@@ -66,10 +68,24 @@ export const home = (req: Request, res: Response) => {
     const totalPages = Math.ceil(total / finalLimit);
     const paginatedDogs = filteredDogs.slice((page - 1) * finalLimit, page * finalLimit);
 
+    const availableOptions = {
+      sizes: [...new Set(filteredDogs.map(d => d.size))].sort(),
+      classifications: [...new Set(filteredDogs.flatMap(d => d.classification))].sort(),
+      colors: [...new Set(filteredDogs.flatMap(d => d.colors))].sort(),
+      countries: [...new Set(filteredDogs.map(d => d.countryOrigin))].sort(),
+      
+      allSizes: [...new Set(allDogs.map(d => d.size))].sort(),
+      allClassifications: [...new Set(allDogs.flatMap(d => d.classification))].sort(),
+      allColors: [...new Set(allDogs.flatMap(d => d.colors))].sort(),
+      allCountries: [...new Set(allDogs.map(d => d.countryOrigin))].sort(),
+    };
+
     res.json({
       dogs: paginatedDogs,
       page,
       totalPages,
+      total,
+      availableOptions,
     });
   } catch (error) {
     res.status(500).json({ error: 'Erro interno do servidor' });
