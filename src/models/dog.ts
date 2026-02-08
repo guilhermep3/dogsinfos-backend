@@ -518,6 +518,42 @@ const data: dogData[] = [
     classification: ["Caça", "Companhia"],
     description: "Com orelhas longas e corpo alongado, o Basset é calmo, afetuoso e excelente farejador. Vive bem em apartamentos, mas precisa de caminhadas para evitar obesidade."
   },
+  {
+    id: 43,
+    breed: "Chow Chow",
+    image: "chow_chow.jpg",
+    size: "Médio",
+    countryOrigin: "China",
+    colors: ["Vermelho", "Preto", "Azul", "Canela", "Creme"],
+    lifeExpectancy: "9 a 15 anos",
+    adultWeightKg: "20 a 32 kg",
+    classification: ["Companhia", "Guarda"],
+    description: "Independente, territorial e com aparência de leão, o Chow Chow é reservado com estranhos. Precisa de socialização precoce e não tolera bem o calor."
+  },
+  {
+    id: 44,
+    breed: "Jack Russell Terrier",
+    image: "jack_russell.jpg",
+    size: "Pequeno",
+    countryOrigin: "Reino Unido",
+    colors: ["Branco", "Branco e marrom", "Tricolor"],
+    lifeExpectancy: "13 a 16 anos",
+    adultWeightKg: "5 to 8 kg",
+    classification: ["Caça", "Companhia"],
+    description: "Enérgico, corajoso e muito esperto, o Jack Russell precisa de bastante exercício. Ideal para tutores ativos que gostem de aventuras."
+  },
+  {
+    id: 45,
+    breed: "Newfoundland (Terra Nova)",
+    image: "newfoundland.jpg",
+    size: "Grande",
+    countryOrigin: "Canadá",
+    colors: ["Preto", "Marrom", "Cinza", "Branco e preto"],
+    lifeExpectancy: "8 a 10 anos",
+    adultWeightKg: "45 to 70 kg",
+    classification: ["Resgate", "Companhia"],
+    description: "Gentil gigante, excelente nadador e protetor de crianças. Precisa de espaço amplo e não se adapta bem ao calor. Requer escovação frequente."
+  }
 ];
 
 export const getDogs = {
