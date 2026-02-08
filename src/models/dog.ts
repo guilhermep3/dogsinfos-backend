@@ -493,7 +493,31 @@ const data: dogData[] = [
     adultWeightKg: "25 a 40 kg",
     classification: ["Pastoreio", "Guarda", "Companhia"],
     description: "O Ovelheiro Gaúcho é uma raça brasileira, conhecida por sua inteligência, energia e forte instinto de pastoreio. Adaptado ao clima do sul do Brasil, é resistente, leal e excelente para trabalhar com rebanhos. Sociável com a família, mas pode ser reservado com estranhos."
-  }
+  },
+  {
+    id: 41,
+    breed: "Schnauzer",
+    image: "schnauzer.jpg",
+    size: "Médio",
+    countryOrigin: "Alemanha",
+    colors: ["Preto", "Sal e pimenta", "Branco", "Preto e prata"],
+    lifeExpectancy: "12 a 15 anos",
+    adultWeightKg: "5 a 35 kg",
+    classification: ["Companhia", "Guarda"],
+    description: "Inteligente, alerta e muito leal, o Schnauzer é um excelente cão de guarda. Adapta-se bem a apartamentos, mas precisa de exercícios regulares e tosa frequente."
+  },
+  {
+    id: 42,
+    breed: "Basset Hound",
+    image: "basset_hound.jpg",
+    size: "Médio",
+    countryOrigin: "França",
+    colors: ["Tricolor", "Branco e marrom", "Preto e branco"],
+    lifeExpectancy: "10 a 12 anos",
+    adultWeightKg: "20 a 29 kg",
+    classification: ["Caça", "Companhia"],
+    description: "Com orelhas longas e corpo alongado, o Basset é calmo, afetuoso e excelente farejador. Vive bem em apartamentos, mas precisa de caminhadas para evitar obesidade."
+  },
 ];
 
 export const getDogs = {
