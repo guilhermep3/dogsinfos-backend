@@ -1,10 +1,10 @@
-type size = 'Pequeno' | 'Médio' | 'Grande';
+export type Size = 'Pequeno' | 'Médio' | 'Grande';
 
-type dogData = {
+export type DogData = {
   id: number;
   breed: string;
   image: string;
-  size: size;
+  size: Size;
   countryOrigin: string;
   colors: string[];
   lifeExpectancy: string;
@@ -13,7 +13,7 @@ type dogData = {
   description: string;
 };
 
-const data: dogData[] = [
+export const dogsData: DogData[] = [
   {
     id: 1,
     breed: "Labrador Retriever",
@@ -555,27 +555,3 @@ const data: dogData[] = [
     description: "Gentil gigante, excelente nadador e protetor de crianças. Precisa de espaço amplo e não se adapta bem ao calor. Requer escovação frequente."
   }
 ];
-
-export const getDogs = {
-  getAll: (offset: number, limit: number): dogData[] => {
-    return data.slice(offset, offset + limit);
-  },
-  getFromBreed: (breed: string): dogData[] => {
-    return data.filter(i => i.breed.toLowerCase().indexOf(breed.toLowerCase()) > -1)
-  },
-  getFromSize: (size: size): dogData[] => {
-    return data.filter(i => i.size === size);
-  },
-  getFromColors: (colors: string): dogData[] => {
-    return data.filter(i => i.colors.includes(colors));
-  },
-  getFromCountry: (country: string): dogData[] => {
-    return data.filter(i => i.countryOrigin === country)
-  },
-  getFromId: (id: number): dogData => {
-    return data.find(i => i.id === id)!;
-  },
-  getDogsCount: () => {
-    return data.length;
-  }
-}

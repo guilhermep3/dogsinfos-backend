@@ -1,36 +1,10 @@
-import express from "express";
-import { getDogs } from "../models/dog.js";
-import * as searchController from "../controllers/searchController.js";
-import * as pageController from "../controllers/pageController.js";
+import express, { RequestHandler } from "express";
+import * as dogController from "../controllers/dogs.js";
 
 const router = express.Router();
 
-router.get('/', (req, res) => {
-  try {
-    const page = parseInt(req.query.page as string) || 1;
-    const limit = parseInt(req.query.limit as string) || 20;
-
-    const maxLimit = 100;
-    const finalLimit = limit > maxLimit ? maxLimit : limit;
-
-    const offset = (page - 1) * finalLimit;
-
-    const dogs = getDogs.getAll(offset, finalLimit);
-    const total = getDogs.getDogsCount();
-
-    const totalPages = Math.ceil(total / finalLimit);
-
-    res.json({
-      page,
-      totalPages,
-      dogs
-    });
-  } catch (error) {
-    res.status(500).json({ error: 'Erro interno do servidor' });
-  }
-})
-router.get('/search', searchController.search);
-router.get('/home', pageController.home);
-router.get('/:id', pageController.details);
+router.get("/", dogController.getDogs);
+router.get("/search", dogController.searchDogs as RequestHandler);
+router.get("/:id", dogController.getDogDetails as RequestHandler);
 
 export default router;
