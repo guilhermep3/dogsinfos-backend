@@ -1,5 +1,5 @@
 import { Request, Response } from "express";
-import { dogsService } from "../services/dogs";
+import { dogsService } from "../services/dogs.js";
 
 const parseQueryArray = (param: any): string[] => {
   if (!param) return [];

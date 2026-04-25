@@ -1,5 +1,5 @@
-import { DogData, dogsData, Size } from "../models/dogs";
-import { Filters } from "../services/dogs";
+import { DogData, dogsData, Size } from "../models/dogs.js";
+import { Filters } from "../services/dogs.js";
 
 export const dogsRepositories = {
   findAll: (offset: number, limit: number): DogData[] => {
