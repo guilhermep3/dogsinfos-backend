@@ -1,4 +1,4 @@
-import { dogsRepositories } from "../repositories/dogs";
+import { dogsRepositories } from "../repositories/dogs.js";
 
 export interface Filters {
   breed?: string[];
