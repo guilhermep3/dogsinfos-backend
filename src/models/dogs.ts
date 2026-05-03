@@ -8,7 +8,7 @@ export type DogData = {
   countryOrigin: string;
   colors: string[];
   lifeExpectancy: string;
-  adultWeightKg: string;
+  adultWeightKg: { male: string; female: string };
   classification: string[];
   description: string;
 };
@@ -22,7 +22,7 @@ export const dogsData: DogData[] = [
     countryOrigin: "Canadá",
     colors: ["Preto", "Marrom", "Caramelo"],
     lifeExpectancy: "10 a 12 anos",
-    adultWeightKg: "25 a 36 kg",
+    adultWeightKg: { male: "29 a 36 kg", female: "25 a 32 kg" },
     classification: ["Companhia", "Assistência"],
     description: "O Labrador é dócil, brincalhão e inteligente, ideal para famílias ativas. Vive bem em casas com quintal e adora água e brincadeiras ao ar livre."
   },
@@ -34,7 +34,7 @@ export const dogsData: DogData[] = [
     countryOrigin: "Escócia",
     colors: ["Dourado"],
     lifeExpectancy: "10 a 12 anos",
-    adultWeightKg: "25 a 34 kg",
+    adultWeightKg: { male: "29 a 34 kg", female: "25 a 29 kg" },
     classification: ["Companhia", "Assistência"],
     description: "O Golden é afetuoso, calmo e excelente com crianças. Se adapta a espaços maiores e precisa de exercícios diários para manter a saúde física e mental."
   },
@@ -46,7 +46,7 @@ export const dogsData: DogData[] = [
     countryOrigin: "Alemanha/França",
     colors: ["Branco", "Preto", "Marrom", "Cinza", "Dourado", "Laranja"],
     lifeExpectancy: "12 a 15 anos",
-    adultWeightKg: "6 a 12 kg",
+    adultWeightKg: { male: "6 a 12 kg", female: "6 a 10 kg" },
     classification: ["Companhia", "Competições de agilidade"],
     description: "O Poodle é inteligente, hipoalergênico e aprende comandos com facilidade. Ideal para apartamentos, desde que tenha estímulos mentais e caminhadas regulares."
   },
@@ -58,7 +58,7 @@ export const dogsData: DogData[] = [
     countryOrigin: "França",
     colors: ["Tigrado", "Preto", "Branco", "Cinza"],
     lifeExpectancy: "10 a 12 anos",
-    adultWeightKg: "8 a 14 kg",
+    adultWeightKg: { male: "9 a 14 kg", female: "8 a 12 kg" },
     classification: ["Companhia"],
     description: "Afetuoso e tranquilo, o Bulldog Francês adora companhia humana. Vive muito bem em apartamentos, mas exige atenção por causa de problemas respiratórios."
   },
@@ -70,7 +70,7 @@ export const dogsData: DogData[] = [
     countryOrigin: "Reino Unido",
     colors: ["Branco", "Caramelo", "Tigrado", "Vermelho"],
     lifeExpectancy: "8 a 10 anos",
-    adultWeightKg: "18 a 25 kg",
+    adultWeightKg: { male: "23 a 25 kg", female: "18 a 23 kg" },
     classification: ["Companhia"],
     description: "O Bulldog Inglês é calmo e companheiro, ideal para lares tranquilos. Adapta-se bem a apartamentos, mas requer cuidados com calor e exercícios leves."
   },
@@ -82,7 +82,7 @@ export const dogsData: DogData[] = [
     countryOrigin: "Alemanha",
     colors: ["Preto e marrom", "Cinza", "Preto"],
     lifeExpectancy: "9 a 13 anos",
-    adultWeightKg: "22 a 40 kg",
+    adultWeightKg: { male: "30 a 40 kg", female: "22 a 32 kg" },
     classification: ["Guarda", "Resgate", "Companhia"],
     description: "Leal, protetor e inteligente, o Pastor Alemão é excelente para guarda e resgate. Precisa de espaço e atividades, sendo mais adequado a casas com quintal ou áreas abertas."
   },
@@ -94,7 +94,7 @@ export const dogsData: DogData[] = [
     countryOrigin: "Reino Unido",
     colors: ["Marrom", "Branco", "Preto", "Tricolor"],
     lifeExpectancy: "12 a 15 anos",
-    adultWeightKg: "9 a 14 kg",
+    adultWeightKg: { male: "10 a 14 kg", female: "9 a 12 kg" },
     classification: ["Caça", "Companhia"],
     description: "O Beagle é curioso, sociável e enérgico. Se adapta a casas e apartamentos com rotina ativa, mas requer atenção por seu faro aguçado e tendência a fugir."
   },
@@ -106,7 +106,7 @@ export const dogsData: DogData[] = [
     countryOrigin: "Alemanha",
     colors: ["Preto e marrom"],
     lifeExpectancy: "8 a 10 anos",
-    adultWeightKg: "35 a 60 kg",
+    adultWeightKg: { male: "50 a 60 kg", female: "35 a 48 kg" },
     classification: ["Guarda", "Companhia"],
     description: "O Rottweiler é forte, leal e protetor. Ideal para casas com espaço e donos experientes; precisa de socialização e adestramento desde cedo."
   },
@@ -118,7 +118,7 @@ export const dogsData: DogData[] = [
     countryOrigin: "Reino Unido",
     colors: ["Cinza", "Dourado", "Preto"],
     lifeExpectancy: "13 a 16 anos",
-    adultWeightKg: "2 a 3 kg",
+    adultWeightKg: { male: "2 a 3 kg", female: "2 a 3 kg" },
     classification: ["Companhia"],
     description: "Pequeno, valente e elegante, o Yorkshire é ótimo para apartamentos. Precisa de escovação frequente e adora estar no colo do tutor."
   },
@@ -130,7 +130,7 @@ export const dogsData: DogData[] = [
     countryOrigin: "China",
     colors: ["Branco", "Marrom", "Preto", "Dourado", "Cinza"],
     lifeExpectancy: "10 a 16 anos",
-    adultWeightKg: "4 a 7 kg",
+    adultWeightKg: { male: "4 a 7 kg", female: "4 a 7 kg" },
     classification: ["Companhia"],
     description: "O Shih Tzu é dócil, sociável e muito apegado à família. Ideal para apartamentos, exige cuidados com os pelos e olhos sensíveis."
   },
@@ -142,7 +142,7 @@ export const dogsData: DogData[] = [
     countryOrigin: "Reino Unido",
     colors: ["Preto e branco", "Merle", "Tricolor", "Marrom e branco"],
     lifeExpectancy: "12 a 15 anos",
-    adultWeightKg: "14 a 20 kg",
+    adultWeightKg: { male: "16 a 20 kg", female: "14 a 18 kg" },
     classification: ["Assistência", "Companhia"],
     description: "Extremamente inteligente e ágil, o Border Collie é ideal para quem mora no campo ou tem espaço para atividades intensas. Não se adapta bem à vida sedentária."
   },
@@ -154,7 +154,7 @@ export const dogsData: DogData[] = [
     countryOrigin: "Alemanha",
     colors: ["Marrom", "Preto e marrom", "Vermelho", "Tigrado"],
     lifeExpectancy: "12 a 16 anos",
-    adultWeightKg: "7 a 14 kg",
+    adultWeightKg: { male: "7 a 14 kg", female: "7 a 12 kg" },
     classification: ["Caça", "Companhia"],
     description: "Destemido e divertido, o Dachshund adora cavar e seguir trilhas. Vive bem em apartamentos, mas precisa de cuidados com a coluna e caminhadas leves."
   },
@@ -166,7 +166,7 @@ export const dogsData: DogData[] = [
     countryOrigin: "Alemanha",
     colors: ["Caramelo", "Tigrado", "Branco"],
     lifeExpectancy: "10 a 12 anos",
-    adultWeightKg: "25 a 32 kg",
+    adultWeightKg: { male: "28 a 32 kg", female: "25 a 29 kg" },
     classification: ["Guarda", "Companhia"],
     description: "O Boxer é brincalhão, fiel e cheio de energia. Ideal para casas com quintal e tutores que gostam de atividades ao ar livre."
   },
@@ -178,7 +178,7 @@ export const dogsData: DogData[] = [
     countryOrigin: "Alemanha",
     colors: ["Preto e marrom", "Marrom", "Azul", "Isabela"],
     lifeExpectancy: "10 a 13 anos",
-    adultWeightKg: "30 a 45 kg",
+    adultWeightKg: { male: "40 a 45 kg", female: "30 a 35 kg" },
     classification: ["Guarda", "Companhia"],
     description: "Elegante, protetor e obediente, o Doberman é ótimo para guarda. Requer espaço, liderança firme e atenção constante."
   },
@@ -190,7 +190,7 @@ export const dogsData: DogData[] = [
     countryOrigin: "Rússia",
     colors: ["Cinza", "Preto e branco", "Vermelho", "Branco"],
     lifeExpectancy: "12 a 14 anos",
-    adultWeightKg: "20 a 27 kg",
+    adultWeightKg: { male: "23 a 27 kg", female: "16 a 23 kg" },
     classification: ["Companhia", "Competições de agilidade"],
     description: "Independente e energético, o Husky adora correr e é sensível ao calor. Prefere ambientes frios e espaços amplos, como casas com quintal."
   },
@@ -202,7 +202,7 @@ export const dogsData: DogData[] = [
     countryOrigin: "México",
     colors: ["Marrom", "Preto", "Branco", "Dourado", "Mesclado"],
     lifeExpectancy: "14 a 17 anos",
-    adultWeightKg: "1,5 a 3 kg",
+    adultWeightKg: { male: "1,5 a 3 kg", female: "1,5 a 3 kg" },
     classification: ["Companhia"],
     description: "Pequeno e alerta, o Chihuahua é ideal para apartamentos e tutores tranquilos. Gosta de colo, mas pode ser desconfiado com estranhos."
   },
@@ -214,7 +214,7 @@ export const dogsData: DogData[] = [
     countryOrigin: "China",
     colors: ["Caramelo", "Preto", "Cinza", "Abricot"],
     lifeExpectancy: "12 a 15 anos",
-    adultWeightKg: "6 a 9 kg",
+    adultWeightKg: { male: "6 a 9 kg", female: "6 a 8 kg" },
     classification: ["Companhia"],
     description: "Afetuoso e divertido, o Pug é perfeito para apartamentos. Requer atenção com a respiração e não tolera muito calor ou exercícios intensos."
   },
@@ -226,7 +226,7 @@ export const dogsData: DogData[] = [
     countryOrigin: "Brasil",
     colors: ["Preto", "Caramelo", "Branco", "Mesclado"],
     lifeExpectancy: "12 a 16 anos",
-    adultWeightKg: "10 a 25 kg",
+    adultWeightKg: { male: "12 a 25 kg", female: "10 a 20 kg" },
     classification: ["Companhia", "Guarda"],
     description: "Versátil, resistente e amoroso, o Vira-lata se adapta bem a diferentes ambientes. Cada um tem uma personalidade única, ideal para quem busca um companheiro fiel."
   },
@@ -238,7 +238,7 @@ export const dogsData: DogData[] = [
     countryOrigin: "Reino Unido",
     colors: ["Dourado", "Preto", "Marrom", "Tricolor", "Azul ruão"],
     lifeExpectancy: "12 a 15 anos",
-    adultWeightKg: "12 a 15 kg",
+    adultWeightKg: { male: "13 a 15 kg", female: "12 a 14 kg" },
     classification: ["Caça", "Companhia"],
     description: "Meigo e sociável, o Cocker é ótimo para crianças e vive bem em apartamentos ou casas. Precisa de escovação frequente e passeios diários."
   },
@@ -250,7 +250,7 @@ export const dogsData: DogData[] = [
     countryOrigin: "Itália",
     colors: ["Branco"],
     lifeExpectancy: "12 a 15 anos",
-    adultWeightKg: "3 a 4 kg",
+    adultWeightKg: { male: "3 a 4 kg", female: "3 a 4 kg" },
     classification: ["Companhia"],
     description: "Delicado e muito apegado, o Maltês se adapta bem a apartamentos. Seus pelos exigem escovação constante, e ele adora colo e atenção."
   },
@@ -262,7 +262,7 @@ export const dogsData: DogData[] = [
     countryOrigin: "Brasil",
     colors: ["Caramelo", "Tigrado", "Preto"],
     lifeExpectancy: "9 a 11 anos",
-    adultWeightKg: "40 a 60 kg",
+    adultWeightKg: { male: "50 a 60 kg", female: "40 a 50 kg" },
     classification: ["Guarda", "Caça"],
     description: "Imponente e territorialista, o Fila exige espaço, adestramento e socialização. Ideal para grandes propriedades e tutores experientes."
   },
@@ -274,7 +274,7 @@ export const dogsData: DogData[] = [
     countryOrigin: "Brasil",
     colors: ["Tricolor"],
     lifeExpectancy: "13 a 16 anos",
-    adultWeightKg: "6 a 10 kg",
+    adultWeightKg: { male: "7 a 10 kg", female: "6 a 9 kg" },
     classification: ["Companhia", "Competições de agilidade"],
     description: "Ágil, leal e muito esperto, o Fox Paulistinha é ótimo para quem vive em casas ou apartamentos com rotina ativa. Ama brincar e aprender truques."
   },
@@ -286,7 +286,7 @@ export const dogsData: DogData[] = [
     countryOrigin: "Alemanha",
     colors: ["Laranja", "Branco", "Preto", "Marrom", "Creme"],
     lifeExpectancy: "12 a 16 anos",
-    adultWeightKg: "1,5 a 3,5 kg",
+    adultWeightKg: { male: "1,5 a 3,5 kg", female: "1,5 a 3 kg" },
     classification: ["Companhia"],
     description: "Pequeno, animado e muito apegado ao tutor, o Spitz Alemão é ideal para apartamentos. Gosta de atenção e cuidados com os pelos são essenciais para manter sua beleza."
   },
@@ -298,7 +298,7 @@ export const dogsData: DogData[] = [
     countryOrigin: "Estados Unidos",
     colors: ["Preto", "Branco", "Caramelo", "Tigrado", "Cinza"],
     lifeExpectancy: "12 a 14 anos",
-    adultWeightKg: "14 a 30 kg",
+    adultWeightKg: { male: "16 a 30 kg", female: "14 a 27 kg" },
     classification: ["Companhia", "Guarda"],
     description: "Forte, leal e inteligente, o Pitbull é um excelente companheiro para tutores firmes e ativos. Requer socialização desde cedo e vive melhor em casas com espaço para se exercitar."
   },
@@ -308,9 +308,9 @@ export const dogsData: DogData[] = [
     image: "dalmata.jpg",
     size: "Médio",
     countryOrigin: "Croácia",
-    colors: ["Branco e preto", "Branco e marrom"],
+    colors: ["Preto e branco", "Branco e marrom"],
     lifeExpectancy: "10 a 13 anos",
-    adultWeightKg: "22 a 32 kg",
+    adultWeightKg: { male: "24 a 32 kg", female: "22 a 28 kg" },
     classification: ["Companhia", "Guarda", "Caça"],
     description: "O Dálmata é um cão enérgico e extrovertido, famoso por sua pelagem manchada. Ele é excelente para famílias ativas e precisa de bastante exercício para se manter saudável e feliz. Seu instinto protetor e lealdade fazem dele um ótimo companheiro."
   },
@@ -322,7 +322,7 @@ export const dogsData: DogData[] = [
     countryOrigin: "China",
     colors: ["Dourado", "Preto", "Branco", "Mesclado", "Cinza"],
     lifeExpectancy: "12 a 15 anos",
-    adultWeightKg: "5 a 8 kg",
+    adultWeightKg: { male: "6 a 8 kg", female: "5 a 7 kg" },
     classification: ["Companhia"],
     description: "Independente, calmo e protetor, o Lhasa Apso vive muito bem em apartamentos. Exige escovação frequente e costuma ser reservado com estranhos."
   },
@@ -334,7 +334,7 @@ export const dogsData: DogData[] = [
     countryOrigin: "Japão",
     colors: ["Vermelho", "Branco", "Tigrado", "Gergelim"],
     lifeExpectancy: "10 a 13 anos",
-    adultWeightKg: "30 a 50 kg",
+    adultWeightKg: { male: "40 a 50 kg", female: "30 a 40 kg" },
     classification: ["Guarda", "Companhia"],
     description: "Silencioso, fiel e imponente, o Akita Inu é indicado para tutores experientes. Vive melhor em locais espaçosos e com socialização adequada desde filhote."
   },
@@ -346,7 +346,7 @@ export const dogsData: DogData[] = [
     countryOrigin: "China",
     colors: ["Rosa", "Cinza", "Preto", "Branco", "Manchado"],
     lifeExpectancy: "13 a 15 anos",
-    adultWeightKg: "3 a 6 kg",
+    adultWeightKg: { male: "3 a 6 kg", female: "3 a 5 kg" },
     classification: ["Companhia"],
     description: "Exótico, brincalhão e afetuoso, o Cão de Crista Chinês é ideal para apartamentos e lares tranquilos. Exige cuidados com a pele, principalmente se for da variedade sem pelos."
   },
@@ -358,7 +358,7 @@ export const dogsData: DogData[] = [
     countryOrigin: "Alemanha",
     colors: ["Cinza-prateado"],
     lifeExpectancy: "10 a 13 anos",
-    adultWeightKg: "25 a 40 kg",
+    adultWeightKg: { male: "30 a 40 kg", female: "25 a 35 kg" },
     classification: ["Caça", "Companhia"],
     description: "Elegante, atlético e inteligente, o Weimaraner precisa de muito exercício e estímulo mental. Vive melhor em casas com quintal e com tutores ativos."
   },
@@ -370,7 +370,7 @@ export const dogsData: DogData[] = [
     countryOrigin: 'Suíça',
     colors: ['Branco e marrom', 'Branco e vermelho', 'Tigrado'],
     lifeExpectancy: '8 a 10 anos',
-    adultWeightKg: '55 a 80 kg',
+    adultWeightKg: { male: "65 a 80 kg", female: "55 a 70 kg" },
     classification: ['Guarda', 'Companhia', 'Resgate'],
     description: "Gentil, paciente e protetor, o São Bernardo é ideal para casas espaçosas ou zonas rurais. Apesar do tamanho imponente, é excelente com crianças, mas precisa de espaço, escovação regular e atenção ao calor."
   },
@@ -382,7 +382,7 @@ export const dogsData: DogData[] = [
     countryOrigin: "Bélgica",
     colors: ["Preto", "Marrom", "Tigrado"],
     lifeExpectancy: "12 a 14 anos",
-    adultWeightKg: "25 a 30 kg",
+    adultWeightKg: { male: "25 a 30 kg", female: "25 a 30 kg" },
     classification: ["Guarda", "Trabalho"],
     description: "O Pastor Belga é ágil, inteligente e muito leal. Usado em forças policiais, exige atividades físicas e mentais diárias."
   },
@@ -394,7 +394,7 @@ export const dogsData: DogData[] = [
     countryOrigin: "Alemanha",
     colors: ["Preto e castanho", "Marrom", "Caramelo"],
     lifeExpectancy: "12 a 15 anos",
-    adultWeightKg: "3 a 5 kg",
+    adultWeightKg: { male: "3 a 5 kg", female: "3 a 5 kg" },
     classification: ["Companhia"],
     description: "Valente e energético, o Pinscher é um ótimo cão de alerta. Requer socialização desde filhote para evitar comportamento agressivo."
   },
@@ -406,7 +406,7 @@ export const dogsData: DogData[] = [
     countryOrigin: "Argentina",
     colors: ["Branco"],
     lifeExpectancy: "10 a 12 anos",
-    adultWeightKg: "40 a 45 kg",
+    adultWeightKg: { male: "40 a 45 kg", female: "40 a 45 kg" },
     classification: ["Caça", "Guarda"],
     description: "O Dogo Argentino é uma raça forte e atlética, criada originalmente na Argentina para caça de animais grandes como javalis. É corajoso, leal e protetor, exigindo um tutor experiente, com socialização e adestramento desde cedo. Apesar de sua aparência intimidadora, pode ser afetuoso com a família."
   },
@@ -418,7 +418,7 @@ export const dogsData: DogData[] = [
     countryOrigin: "Estados Unidos",
     colors: ["Preto e branco", "Tigrado", "Marrom e branco"],
     lifeExpectancy: "11 a 13 anos",
-    adultWeightKg: "6 a 11 kg",
+    adultWeightKg: { male: "8 a 11 kg", female: "6 a 9 kg" },
     classification: ["Companhia"],
     description: "Afetuoso, brincalhão e sociável, o Boston Terrier se adapta bem a apartamentos e é ideal para famílias."
   },
@@ -430,7 +430,7 @@ export const dogsData: DogData[] = [
     countryOrigin: "Austrália",
     colors: ["Azul", "Vermelho"],
     lifeExpectancy: "12 a 15 anos",
-    adultWeightKg: "14 a 22 kg",
+    adultWeightKg: { male: "16 a 22 kg", female: "14 a 20 kg" },
     classification: ["Pastoreio", "Caça"],
     description: "Ágil, inteligente e muito resistente, o Boiadeiro Australiano é excelente para atividades no campo e esportes caninos."
   },
@@ -442,7 +442,7 @@ export const dogsData: DogData[] = [
     countryOrigin: "Itália",
     colors: ["Preto", "Cinza", "Tigrado", "Marrom"],
     lifeExpectancy: "9 a 12 anos",
-    adultWeightKg: "40 a 50 kg",
+    adultWeightKg: { male: "45 a 50 kg", female: "40 a 45 kg" },
     classification: ["Guarda"],
     description: "Robusto e protetor, o Cane Corso é fiel à sua família. Precisa de adestramento firme e bastante espaço."
   },
@@ -454,7 +454,7 @@ export const dogsData: DogData[] = [
     countryOrigin: "China",
     colors: ["Bege", "Preto", "Marrom", "Azul"],
     lifeExpectancy: "8 a 12 anos",
-    adultWeightKg: "18 a 25 kg",
+    adultWeightKg: { male: "20 a 25 kg", female: "18 a 23 kg" },
     classification: ["Companhia"],
     description: "Com rugas marcantes e personalidade reservada, o Shar Pei é calmo e fiel, mas precisa de socialização desde cedo."
   },
@@ -466,9 +466,9 @@ export const dogsData: DogData[] = [
     countryOrigin: "Turquia",
     colors: ["Cinza", "Bege", "Amarelo", "Preto"],
     lifeExpectancy: "12 a 15 anos",
-    adultWeightKg: "50kg a 66kg",
+    adultWeightKg: { male: "50 a 66 kg", female: "40 a 55 kg" },
     classification: ["Guarda", "Caça", "Pastoreio"],
-    description: "O Kangal é uma raça originária da Turquia, conhecida por sua força, coragem e instinto protetor. Tradicionalmente usado para proteger rebanhos, e é extremamente leal à sua família. Apesar de seu tamanho imponente, é calmo, equilibrado e gentil.",
+    description: "O Kangal é uma raça originária da Turquia, conhecida por sua força, coragem e instinto protetor. Tradicionalmente usado para proteger rebanhos, é extremamente leal à sua família. Apesar de seu tamanho imponente, é calmo, equilibrado e gentil."
   },
   {
     id: 39,
@@ -476,9 +476,9 @@ export const dogsData: DogData[] = [
     image: "whippet.jpg",
     size: "Médio",
     countryOrigin: "Reino Unido",
-    colors: ["Preto", "Branco", "Tigrado", "Cinza", "Branco e preto"],
+    colors: ["Preto", "Branco", "Tigrado", "Cinza", "Preto e branco"],
     lifeExpectancy: "12 a 15 anos",
-    adultWeightKg: "10 a 15 kg",
+    adultWeightKg: { male: "12 a 15 kg", female: "10 a 14 kg" },
     classification: ["Corrida", "Companhia"],
     description: "Rápido, sensível e elegante, o Whippet é ótimo para quem quer um cão calmo em casa, mas com energia para correr ao ar livre."
   },
@@ -490,7 +490,7 @@ export const dogsData: DogData[] = [
     countryOrigin: "Brasil",
     colors: ["Preto", "Branco", "Cinza", "Azul", "Tricolor"],
     lifeExpectancy: "13 a 15 anos",
-    adultWeightKg: "25 a 40 kg",
+    adultWeightKg: { male: "30 a 40 kg", female: "25 a 35 kg" },
     classification: ["Pastoreio", "Guarda", "Companhia"],
     description: "O Ovelheiro Gaúcho é uma raça brasileira, conhecida por sua inteligência, energia e forte instinto de pastoreio. Adaptado ao clima do sul do Brasil, é resistente, leal e excelente para trabalhar com rebanhos. Sociável com a família, mas pode ser reservado com estranhos."
   },
@@ -502,9 +502,9 @@ export const dogsData: DogData[] = [
     countryOrigin: "Alemanha",
     colors: ["Preto", "Sal e pimenta", "Branco", "Preto e prata"],
     lifeExpectancy: "12 a 15 anos",
-    adultWeightKg: "5 a 35 kg",
+    adultWeightKg: { male: "5 a 35 kg", female: "5 a 30 kg" },
     classification: ["Companhia", "Guarda"],
-    description: "Inteligente, alerta e muito leal, o Schnauzer é um excelente cão de guarda. Adapta-se bem a apartamentos, mas precisa de exercícios regulares e tosa frequente."
+    description: "O Schnauzer é um cão versátil que varia de tamanho (Miniatura, Standard e Gigante). Inteligente, alerta e leal, é excelente cão de guarda. Adapta-se bem a apartamentos no caso do Schnauzer Miniatura, mas precisa de exercícios regulares."
   },
   {
     id: 42,
@@ -514,7 +514,7 @@ export const dogsData: DogData[] = [
     countryOrigin: "França",
     colors: ["Tricolor", "Branco e marrom", "Preto e branco"],
     lifeExpectancy: "10 a 12 anos",
-    adultWeightKg: "20 a 29 kg",
+    adultWeightKg: { male: "23 a 29 kg", female: "20 a 25 kg" },
     classification: ["Caça", "Companhia"],
     description: "Com orelhas longas e corpo alongado, o Basset é calmo, afetuoso e excelente farejador. Vive bem em apartamentos, mas precisa de caminhadas para evitar obesidade."
   },
@@ -526,7 +526,7 @@ export const dogsData: DogData[] = [
     countryOrigin: "China",
     colors: ["Vermelho", "Preto", "Azul", "Canela", "Creme"],
     lifeExpectancy: "9 a 15 anos",
-    adultWeightKg: "20 a 32 kg",
+    adultWeightKg: { male: "25 a 32 kg", female: "20 a 27 kg" },
     classification: ["Companhia", "Guarda"],
     description: "Independente, territorial e com aparência de leão, o Chow Chow é reservado com estranhos. Precisa de socialização precoce e não tolera bem o calor."
   },
@@ -538,7 +538,7 @@ export const dogsData: DogData[] = [
     countryOrigin: "Reino Unido",
     colors: ["Branco", "Branco e marrom", "Tricolor"],
     lifeExpectancy: "13 a 16 anos",
-    adultWeightKg: "5 to 8 kg",
+    adultWeightKg: { male: "6 a 8 kg", female: "5 a 7 kg" },
     classification: ["Caça", "Companhia"],
     description: "Enérgico, corajoso e muito esperto, o Jack Russell precisa de bastante exercício. Ideal para tutores ativos que gostem de aventuras."
   },
@@ -548,10 +548,70 @@ export const dogsData: DogData[] = [
     image: "newfoundland.jpg",
     size: "Grande",
     countryOrigin: "Canadá",
-    colors: ["Preto", "Marrom", "Cinza", "Branco e preto"],
+    colors: ["Preto", "Marrom", "Cinza", "Preto e branco"],
     lifeExpectancy: "8 a 10 anos",
-    adultWeightKg: "45 to 70 kg",
+    adultWeightKg: { male: "60 a 70 kg", female: "45 a 55 kg" },
     classification: ["Resgate", "Companhia"],
     description: "Gentil gigante, excelente nadador e protetor de crianças. Precisa de espaço amplo e não se adapta bem ao calor. Requer escovação frequente."
+  },
+  {
+    id: 46,
+    breed: "Shiba Inu",
+    image: "shiba_inu.jpg",
+    size: "Médio",
+    countryOrigin: "Japão",
+    colors: ["Vermelho", "Preto", "Branco", "Canela"],
+    lifeExpectancy: "12 a 15 anos",
+    adultWeightKg: { male: "9 a 10 kg", female: "8 a 9 kg" },
+    classification: ["Companhia"],
+    description: "O Shiba Inu é um cão japonês, conhecido por sua aparência de raposa, personalidade independente e leal. Ele é inteligente e pode ser reservado com estranhos, mas é muito apegado à família. Adapta-se bem a apartamentos, desde que tenha exercícios e estímulo mental frequentes."
+  },
+  {
+    id: 47,
+    breed: "Papillon (Spaniel Anão Francês)",
+    image: "papillon.jpg",
+    size: "Pequeno",
+    countryOrigin: "França",
+    colors: ["Preto e branco", "Branco e marrom", "Tricolor"],
+    lifeExpectancy: "12 a 16 anos",
+    adultWeightKg: { male: "3 a 4 kg", female: "3 a 4 kg" },
+    classification: ["Companhia"],
+    description: "O Papillon é um cão pequeno e elegante, conhecido por suas orelhas em forma de borboleta. É inteligente, sociável e se adapta bem a apartamentos, desde que tenha exercícios e estímulo mental frequentes."
+  },
+  {
+    id: 48,
+    breed: "Samoieda",
+    image: "samoieda.jpg",
+    size: "Grande",
+    countryOrigin: "Rússia",
+    colors: ["Branco", "Creme"],
+    lifeExpectancy: "12 a 14 anos",
+    adultWeightKg: { male: "25 a 30 kg", female: "20 a 25 kg" },
+    classification: ["Companhia", "Trabalho"],
+    description: "A Samoieda é um cão de porte grande, conhecida por sua pelagem densa e seu famoso 'sorriso'. É inteligente, leal e sociável, adaptando-se bem a ambientes frios. Precisa de exercícios diários e escovação frequente."
+  },
+  {
+    id: 49,
+    breed: "Pastor Australiano",
+    image: "pastor_australiano.jpg",
+    size: "Grande",
+    countryOrigin: "Estados Unidos",
+    colors: ["Tricolor", "Preto e branco", "Vermelho e branco", "Azul merle", "Vermelho merle"],
+    lifeExpectancy: "12 a 15 anos",
+    adultWeightKg: { male: "25 a 32 kg", female: "18 a 25 kg" },
+    classification: ["Companhia", "Pastoreio"],
+    description: "O Pastor Australiano é um cão extremamente inteligente, energético e leal. Apesar do nome, foi desenvolvido nos Estados Unidos para pastoreio. Excelente para esportes caninos, precisa de muito exercício e estímulo mental diariamente."
+  },
+  {
+    id: 50,
+    breed: "Basenji",
+    image: "basenji.jpg",
+    size: "Médio",
+    countryOrigin: "Congo",
+    colors: ["Tigrado", "Preto", "Branco", "Marrom"],
+    lifeExpectancy: "12 a 14 anos",
+    adultWeightKg: { male: "10 a 12 kg", female: "9 a 11 kg" },
+    classification: ["Companhia"],
+    description: "O Basenji é conhecido como o 'cão que não late', emitindo um som peculiar parecido com um yodel. É independente, limpo (comportamento de gato) e curioso. Precisa de exercícios e tem forte instinto de caça."
   }
 ];
