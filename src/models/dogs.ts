@@ -17,7 +17,7 @@ export const dogsData: DogData[] = [
   {
     id: 1,
     breed: "Labrador Retriever",
-    image: "labrador_retriever.jpg",
+    image: "https://res.cloudinary.com/dvuxplf3j/image/upload/v1777845035/dogs/ayp1ygq1vzx0ksgtnzyk.jpg",
     size: "Médio",
     countryOrigin: "Canadá",
     colors: ["Preto", "Marrom", "Caramelo"],
@@ -29,7 +29,7 @@ export const dogsData: DogData[] = [
   {
     id: 2,
     breed: "Golden Retriever",
-    image: "golden_retriever.jpg",
+    image: "https://res.cloudinary.com/dvuxplf3j/image/upload/v1777845031/dogs/ayup8xovbrplcghurtwm.jpg",
     size: "Médio",
     countryOrigin: "Escócia",
     colors: ["Dourado"],
@@ -41,7 +41,7 @@ export const dogsData: DogData[] = [
   {
     id: 3,
     breed: "Poodle",
-    image: "poodle.jpg",
+    image: "https://res.cloudinary.com/dvuxplf3j/image/upload/v1777845044/dogs/tnagugtzuwlulhg7fxng.jpg",
     size: "Pequeno",
     countryOrigin: "Alemanha/França",
     colors: ["Branco", "Preto", "Marrom", "Cinza", "Dourado", "Laranja"],
@@ -53,7 +53,7 @@ export const dogsData: DogData[] = [
   {
     id: 4,
     breed: "Bulldog Francês",
-    image: "bulldog_frances.jpg",
+    image: "https://res.cloudinary.com/dvuxplf3j/image/upload/v1777845018/dogs/tjv1geepxvp5vzbh66x0.jpg",
     size: "Pequeno",
     countryOrigin: "França",
     colors: ["Tigrado", "Preto", "Branco", "Cinza"],
@@ -65,7 +65,7 @@ export const dogsData: DogData[] = [
   {
     id: 5,
     breed: "Bulldog Inglês",
-    image: "bulldog_ingles.jpg",
+    image: "https://res.cloudinary.com/dvuxplf3j/image/upload/v1777845019/dogs/omqjp88dbd6earsgkov0.jpg",
     size: "Médio",
     countryOrigin: "Reino Unido",
     colors: ["Branco", "Caramelo", "Tigrado", "Vermelho"],
@@ -77,7 +77,7 @@ export const dogsData: DogData[] = [
   {
     id: 6,
     breed: "Pastor Alemão",
-    image: "pastor_alemao.jpg",
+    image: "https://res.cloudinary.com/dvuxplf3j/image/upload/v1777845040/dogs/u58t4isbd98ounhgegpi.jpg",
     size: "Grande",
     countryOrigin: "Alemanha",
     colors: ["Preto e marrom", "Cinza", "Preto"],
@@ -89,7 +89,7 @@ export const dogsData: DogData[] = [
   {
     id: 7,
     breed: "Beagle",
-    image: "beagle.jpg",
+    image: "https://res.cloudinary.com/dvuxplf3j/image/upload/v1777845015/dogs/f2fndkclntjsjcy2ru6u.jpg",
     size: "Médio",
     countryOrigin: "Reino Unido",
     colors: ["Marrom", "Branco", "Preto", "Tricolor"],
@@ -101,7 +101,7 @@ export const dogsData: DogData[] = [
   {
     id: 8,
     breed: "Rottweiler",
-    image: "rottweiler.jpg",
+    image: "https://res.cloudinary.com/dvuxplf3j/image/upload/v1777845046/dogs/h9rut6q2arts9kqa3m1y.jpg",
     size: "Grande",
     countryOrigin: "Alemanha",
     colors: ["Preto e marrom"],
@@ -113,7 +113,7 @@ export const dogsData: DogData[] = [
   {
     id: 9,
     breed: "Yorkshire Terrier",
-    image: "yorkshire_terrier.jpg",
+    image: "https://res.cloudinary.com/dvuxplf3j/image/upload/v1777845054/dogs/nkbb6lt2nzedh1bigtba.jpg",
     size: "Pequeno",
     countryOrigin: "Reino Unido",
     colors: ["Cinza", "Dourado", "Preto"],
@@ -125,7 +125,7 @@ export const dogsData: DogData[] = [
   {
     id: 10,
     breed: "Shih Tzu",
-    image: "shih_tzu.jpg",
+    image: "https://res.cloudinary.com/dvuxplf3j/image/upload/v1777845050/dogs/ijrsu1i5tdvwl8fgi9wk.jpg",
     size: "Pequeno",
     countryOrigin: "China",
     colors: ["Branco", "Marrom", "Preto", "Dourado", "Cinza"],
@@ -137,7 +137,7 @@ export const dogsData: DogData[] = [
   {
     id: 11,
     breed: "Border Collie",
-    image: "border_collie.jpg",
+    image: "https://res.cloudinary.com/dvuxplf3j/image/upload/v1777845016/dogs/mwsvbrhp7mayo5njg0g3.jpg",
     size: "Médio",
     countryOrigin: "Reino Unido",
     colors: ["Preto e branco", "Merle", "Tricolor", "Marrom e branco"],
@@ -149,7 +149,7 @@ export const dogsData: DogData[] = [
   {
     id: 12,
     breed: "Dachshund",
-    image: "dachshund.jpg",
+    image: "https://res.cloudinary.com/dvuxplf3j/image/upload/v1777845024/dogs/xvi8qjmi9retqo6y7ttl.jpg",
     size: "Pequeno",
     countryOrigin: "Alemanha",
     colors: ["Marrom", "Preto e marrom", "Vermelho", "Tigrado"],
@@ -161,7 +161,7 @@ export const dogsData: DogData[] = [
   {
     id: 13,
     breed: "Boxer",
-    image: "boxer.jpg",
+    image: "https://res.cloudinary.com/dvuxplf3j/image/upload/v1777845018/dogs/tjv1geepxvp5vzbh66x0.jpg",
     size: "Grande",
     countryOrigin: "Alemanha",
     colors: ["Caramelo", "Tigrado", "Branco"],
@@ -173,7 +173,7 @@ export const dogsData: DogData[] = [
   {
     id: 14,
     breed: "Doberman",
-    image: "doberman.jpg",
+    image: "https://res.cloudinary.com/dvuxplf3j/image/upload/v1777845025/dogs/qefokvlrtl0b2mpu7fth.webp",
     size: "Grande",
     countryOrigin: "Alemanha",
     colors: ["Preto e marrom", "Marrom", "Azul", "Isabela"],
@@ -185,7 +185,7 @@ export const dogsData: DogData[] = [
   {
     id: 15,
     breed: "Husky Siberiano",
-    image: "husky_siberiano.jpg",
+    image: "https://res.cloudinary.com/dvuxplf3j/image/upload/v1777845032/dogs/add7zxqilp9rhm7hrg9o.jpg",
     size: "Grande",
     countryOrigin: "Rússia",
     colors: ["Cinza", "Preto e branco", "Vermelho", "Branco"],
@@ -197,7 +197,7 @@ export const dogsData: DogData[] = [
   {
     id: 16,
     breed: "Chihuahua",
-    image: "chihuahua.jpg",
+    image: "https://res.cloudinary.com/dvuxplf3j/image/upload/v1777845021/dogs/khtfa4v5tigcpmpv2wty.png",
     size: "Pequeno",
     countryOrigin: "México",
     colors: ["Marrom", "Preto", "Branco", "Dourado", "Mesclado"],
@@ -209,7 +209,7 @@ export const dogsData: DogData[] = [
   {
     id: 17,
     breed: "Pug",
-    image: "pug.jpg",
+    image: "https://res.cloudinary.com/dvuxplf3j/image/upload/v1777845045/dogs/qfg3ag8uyoskzjogqf0t.jpg",
     size: "Pequeno",
     countryOrigin: "China",
     colors: ["Caramelo", "Preto", "Cinza", "Abricot"],
@@ -221,7 +221,7 @@ export const dogsData: DogData[] = [
   {
     id: 18,
     breed: "Vira-lata",
-    image: "vira_lata.jpg",
+    image: "https://res.cloudinary.com/dvuxplf3j/image/upload/v1777845051/dogs/c8k2o3wxbcfrfzzolqbp.jpg",
     size: "Médio",
     countryOrigin: "Brasil",
     colors: ["Preto", "Caramelo", "Branco", "Mesclado"],
@@ -233,7 +233,7 @@ export const dogsData: DogData[] = [
   {
     id: 19,
     breed: "Cocker Spaniel",
-    image: "cocker_spaniel.jpg",
+    image: "https://res.cloudinary.com/dvuxplf3j/image/upload/v1777845023/dogs/zzmfzzu4vxe3g4yvf7pd.jpg",
     size: "Médio",
     countryOrigin: "Reino Unido",
     colors: ["Dourado", "Preto", "Marrom", "Tricolor", "Azul ruão"],
@@ -245,7 +245,7 @@ export const dogsData: DogData[] = [
   {
     id: 20,
     breed: "Maltês",
-    image: "maltes.jpg",
+    image: "https://res.cloudinary.com/dvuxplf3j/image/upload/v1777845037/dogs/oflbmfefmihc4368eni7.jpg",
     size: "Pequeno",
     countryOrigin: "Itália",
     colors: ["Branco"],
@@ -257,7 +257,7 @@ export const dogsData: DogData[] = [
   {
     id: 21,
     breed: "Fila Brasileiro",
-    image: "fila_brasileiro.jpg",
+    image: "https://res.cloudinary.com/dvuxplf3j/image/upload/v1777845028/dogs/g6sxqi5tbanlosdm5kx0.jpg",
     size: "Grande",
     countryOrigin: "Brasil",
     colors: ["Caramelo", "Tigrado", "Preto"],
@@ -269,7 +269,7 @@ export const dogsData: DogData[] = [
   {
     id: 22,
     breed: "Fox Paulistinha",
-    image: "fox_paulistinha.jpg",
+    image: "https://res.cloudinary.com/dvuxplf3j/image/upload/v1777845030/dogs/iambjenav85rkzoucy9u.jpg",
     size: "Médio",
     countryOrigin: "Brasil",
     colors: ["Tricolor"],
@@ -281,7 +281,7 @@ export const dogsData: DogData[] = [
   {
     id: 23,
     breed: "Spitz Alemão (Lulu da Pomerânia)",
-    image: "spitz_alemao.jpg",
+    image: "https://res.cloudinary.com/dvuxplf3j/image/upload/v1777845051/dogs/xptptpmpblwknxdulvnw.jpg",
     size: "Pequeno",
     countryOrigin: "Alemanha",
     colors: ["Laranja", "Branco", "Preto", "Marrom", "Creme"],
@@ -293,7 +293,7 @@ export const dogsData: DogData[] = [
   {
     id: 24,
     breed: "Pitbull Terrier Americano",
-    image: "pitbull.jpg",
+    image: "https://res.cloudinary.com/dvuxplf3j/image/upload/v1777845043/dogs/ppchqueeqszgswvdsqj9.jpg",
     size: "Médio",
     countryOrigin: "Estados Unidos",
     colors: ["Preto", "Branco", "Caramelo", "Tigrado", "Cinza"],
@@ -305,7 +305,7 @@ export const dogsData: DogData[] = [
   {
     id: 25,
     breed: "Dálmata",
-    image: "dalmata.jpg",
+    image: "https://res.cloudinary.com/dvuxplf3j/image/upload/v1777845025/dogs/wul8nde3xpkcymggifd2.png",
     size: "Médio",
     countryOrigin: "Croácia",
     colors: ["Preto e branco", "Branco e marrom"],
@@ -317,7 +317,7 @@ export const dogsData: DogData[] = [
   {
     id: 26,
     breed: "Lhasa Apso",
-    image: "lhasa_apso.jpg",
+    image: "https://res.cloudinary.com/dvuxplf3j/image/upload/v1777845036/dogs/mmknefnihqgfnq5yg40o.jpg",
     size: "Pequeno",
     countryOrigin: "China",
     colors: ["Dourado", "Preto", "Branco", "Mesclado", "Cinza"],
@@ -329,7 +329,7 @@ export const dogsData: DogData[] = [
   {
     id: 27,
     breed: "Akita Inu",
-    image: "akita_inu.jpg",
+    image: "https://res.cloudinary.com/dvuxplf3j/image/upload/v1777845012/dogs/olbccr7nmnic9wfczbke.jpg",
     size: "Grande",
     countryOrigin: "Japão",
     colors: ["Vermelho", "Branco", "Tigrado", "Gergelim"],
@@ -341,7 +341,7 @@ export const dogsData: DogData[] = [
   {
     id: 28,
     breed: "Cão de Crista Chinês",
-    image: "cao_crista_chines.jpg",
+    image: "https://res.cloudinary.com/dvuxplf3j/image/upload/v1777845020/dogs/hos0wqhcwzifzdig1rsy.jpg",
     size: "Pequeno",
     countryOrigin: "China",
     colors: ["Rosa", "Cinza", "Preto", "Branco", "Manchado"],
@@ -353,7 +353,7 @@ export const dogsData: DogData[] = [
   {
     id: 29,
     breed: "Weimaraner",
-    image: "weimaraner.jpg",
+    image: "https://res.cloudinary.com/dvuxplf3j/image/upload/v1777845052/dogs/i10u5rtmlnyfb9wdaniq.jpg",
     size: "Grande",
     countryOrigin: "Alemanha",
     colors: ["Cinza-prateado"],
@@ -365,7 +365,7 @@ export const dogsData: DogData[] = [
   {
     id: 30,
     breed: "São Bernardo",
-    image: 'sao_bernardo.jpg',
+    image: 'https://res.cloudinary.com/dvuxplf3j/image/upload/v1777845047/dogs/nh8ycc3fnuh9erkwkdy8.jpg',
     size: 'Grande',
     countryOrigin: 'Suíça',
     colors: ['Branco e marrom', 'Branco e vermelho', 'Tigrado'],
@@ -377,7 +377,7 @@ export const dogsData: DogData[] = [
   {
     id: 31,
     breed: "Pastor Belga",
-    image: "pastor_belga.jpg",
+    image: "https://res.cloudinary.com/dvuxplf3j/image/upload/v1777845041/dogs/fpeaz81xmzlsjpzgkem2.jpg",
     size: "Grande",
     countryOrigin: "Bélgica",
     colors: ["Preto", "Marrom", "Tigrado"],
@@ -389,7 +389,7 @@ export const dogsData: DogData[] = [
   {
     id: 32,
     breed: "Pinscher Miniatura",
-    image: "pinscher.jpg",
+    image: "https://res.cloudinary.com/dvuxplf3j/image/upload/v1777845042/dogs/pw8tgfyaapkj7zp3bbst.jpg",
     size: "Pequeno",
     countryOrigin: "Alemanha",
     colors: ["Preto e castanho", "Marrom", "Caramelo"],
@@ -401,7 +401,7 @@ export const dogsData: DogData[] = [
   {
     id: 33,
     breed: "Dogo Argentino",
-    image: "dogo_argentino.jpg",
+    image: "https://res.cloudinary.com/dvuxplf3j/image/upload/v1777845027/dogs/ocxto7elivpuoaj23seh.jpg",
     size: "Grande",
     countryOrigin: "Argentina",
     colors: ["Branco"],
@@ -413,7 +413,7 @@ export const dogsData: DogData[] = [
   {
     id: 34,
     breed: "Boston Terrier",
-    image: "boston_terrier.jpg",
+    image: "https://res.cloudinary.com/dvuxplf3j/image/upload/v1777845017/dogs/evpdnubtib7tbtxn57ay.jpg",
     size: "Pequeno",
     countryOrigin: "Estados Unidos",
     colors: ["Preto e branco", "Tigrado", "Marrom e branco"],
@@ -425,7 +425,7 @@ export const dogsData: DogData[] = [
   {
     id: 35,
     breed: "Boiadeiro Australiano",
-    image: "boiadeiro_australiano.jpg",
+    image: "https://res.cloudinary.com/dvuxplf3j/image/upload/v1777845015/dogs/ywg5ikjrpnziaactcjqs.jpg",
     size: "Médio",
     countryOrigin: "Austrália",
     colors: ["Azul", "Vermelho"],
@@ -437,7 +437,7 @@ export const dogsData: DogData[] = [
   {
     id: 36,
     breed: "Cane Corso",
-    image: "cane_corso.jpg",
+    image: "https://res.cloudinary.com/dvuxplf3j/image/upload/v1777845020/dogs/eeibgmcobcwceihwnnmz.jpg",
     size: "Grande",
     countryOrigin: "Itália",
     colors: ["Preto", "Cinza", "Tigrado", "Marrom"],
@@ -449,7 +449,7 @@ export const dogsData: DogData[] = [
   {
     id: 37,
     breed: "Shar Pei",
-    image: "shar_pei.jpg",
+    image: "https://res.cloudinary.com/dvuxplf3j/image/upload/v1777845049/dogs/hs0kqxtcqul3fxmwcu1e.jpg",
     size: "Médio",
     countryOrigin: "China",
     colors: ["Bege", "Preto", "Marrom", "Azul"],
@@ -461,7 +461,7 @@ export const dogsData: DogData[] = [
   {
     id: 38,
     breed: "Kangal",
-    image: "kangal.jpg",
+    image: "https://res.cloudinary.com/dvuxplf3j/image/upload/v1777845033/dogs/n5opwfhufvvlk2vbpsaq.jpg",
     size: "Grande",
     countryOrigin: "Turquia",
     colors: ["Cinza", "Bege", "Amarelo", "Preto"],
@@ -473,7 +473,7 @@ export const dogsData: DogData[] = [
   {
     id: 39,
     breed: "Whippet",
-    image: "whippet.jpg",
+    image: "https://res.cloudinary.com/dvuxplf3j/image/upload/v1777845053/dogs/xlqyiujkvzdasme9jtqe.jpg",
     size: "Médio",
     countryOrigin: "Reino Unido",
     colors: ["Preto", "Branco", "Tigrado", "Cinza", "Preto e branco"],
@@ -485,7 +485,7 @@ export const dogsData: DogData[] = [
   {
     id: 40,
     breed: "Ovelheiro Gaúcho",
-    image: "ovelheiro_gaucho.jpg",
+    image: "https://res.cloudinary.com/dvuxplf3j/image/upload/v1777845038/dogs/yrbxlp5uuudl38exhsyi.jpg",
     size: "Grande",
     countryOrigin: "Brasil",
     colors: ["Preto", "Branco", "Cinza", "Azul", "Tricolor"],
@@ -497,7 +497,7 @@ export const dogsData: DogData[] = [
   {
     id: 41,
     breed: "Schnauzer",
-    image: "schnauzer.jpg",
+    image: "https://res.cloudinary.com/dvuxplf3j/image/upload/v1777845048/dogs/fdrkuwwlgjutwioses34.jpg",
     size: "Médio",
     countryOrigin: "Alemanha",
     colors: ["Preto", "Sal e pimenta", "Branco", "Preto e prata"],
@@ -509,7 +509,7 @@ export const dogsData: DogData[] = [
   {
     id: 42,
     breed: "Basset Hound",
-    image: "basset_hound.jpg",
+    image: "https://res.cloudinary.com/dvuxplf3j/image/upload/v1777845014/dogs/ypjaa9ygvn9iksyjcaop.jpg",
     size: "Médio",
     countryOrigin: "França",
     colors: ["Tricolor", "Branco e marrom", "Preto e branco"],
@@ -521,7 +521,7 @@ export const dogsData: DogData[] = [
   {
     id: 43,
     breed: "Chow Chow",
-    image: "chow_chow.jpg",
+    image: "https://res.cloudinary.com/dvuxplf3j/image/upload/v1777845022/dogs/rvymwjliayxvbhm88cse.jpg",
     size: "Médio",
     countryOrigin: "China",
     colors: ["Vermelho", "Preto", "Azul", "Canela", "Creme"],
@@ -533,7 +533,7 @@ export const dogsData: DogData[] = [
   {
     id: 44,
     breed: "Jack Russell Terrier",
-    image: "jack_russell.jpg",
+    image: "https://res.cloudinary.com/dvuxplf3j/image/upload/v1777845033/dogs/abz40io77vfv0l9y9bcb.jpg",
     size: "Pequeno",
     countryOrigin: "Reino Unido",
     colors: ["Branco", "Branco e marrom", "Tricolor"],
@@ -545,7 +545,7 @@ export const dogsData: DogData[] = [
   {
     id: 45,
     breed: "Newfoundland (Terra Nova)",
-    image: "newfoundland.jpg",
+    image: "https://res.cloudinary.com/dvuxplf3j/image/upload/v1777845037/dogs/vrdq8ryhnur0stvbsele.jpg",
     size: "Grande",
     countryOrigin: "Canadá",
     colors: ["Preto", "Marrom", "Cinza", "Preto e branco"],
@@ -557,7 +557,7 @@ export const dogsData: DogData[] = [
   {
     id: 46,
     breed: "Shiba Inu",
-    image: "shiba_inu.jpg",
+    image: "https://res.cloudinary.com/dvuxplf3j/image/upload/v1777845049/dogs/i2nccxs3uf0coeejkx2d.jpg",
     size: "Médio",
     countryOrigin: "Japão",
     colors: ["Vermelho", "Preto", "Branco", "Canela"],
@@ -569,7 +569,7 @@ export const dogsData: DogData[] = [
   {
     id: 47,
     breed: "Papillon (Spaniel Anão Francês)",
-    image: "papillon.jpg",
+    image: "https://res.cloudinary.com/dvuxplf3j/image/upload/v1777845039/dogs/ozpxxkiodkvoer9akqla.jpg",
     size: "Pequeno",
     countryOrigin: "França",
     colors: ["Preto e branco", "Branco e marrom", "Tricolor"],
@@ -581,7 +581,7 @@ export const dogsData: DogData[] = [
   {
     id: 48,
     breed: "Samoieda",
-    image: "samoieda.jpg",
+    image: "https://res.cloudinary.com/dvuxplf3j/image/upload/v1777845047/dogs/bvzqfxtntlg8yw0zzbpk.jpg",
     size: "Grande",
     countryOrigin: "Rússia",
     colors: ["Branco", "Creme"],
@@ -593,7 +593,7 @@ export const dogsData: DogData[] = [
   {
     id: 49,
     breed: "Pastor Australiano",
-    image: "pastor_australiano.jpg",
+    image: "https://res.cloudinary.com/dvuxplf3j/image/upload/v1777845040/dogs/pxc2zpdvceixhpzrost1.jpg",
     size: "Grande",
     countryOrigin: "Estados Unidos",
     colors: ["Tricolor", "Preto e branco", "Vermelho e branco", "Azul merle", "Vermelho merle"],
@@ -605,7 +605,7 @@ export const dogsData: DogData[] = [
   {
     id: 50,
     breed: "Basenji",
-    image: "basenji.jpg",
+    image: "https://res.cloudinary.com/dvuxplf3j/image/upload/v1777845013/dogs/vttwzaefhewbrp8l2xmk.jpg",
     size: "Médio",
     countryOrigin: "Congo",
     colors: ["Tigrado", "Preto", "Branco", "Marrom"],
