@@ -596,7 +596,7 @@ export const dogsData: DogData[] = [
     image: "https://res.cloudinary.com/dvuxplf3j/image/upload/v1777845040/dogs/pxc2zpdvceixhpzrost1.jpg",
     size: "Grande",
     countryOrigin: "Estados Unidos",
-    colors: ["Tricolor", "Preto e branco", "Vermelho e branco", "Azul", "Vermelho"],
+    colors: ["Tricolor", "Preto e branco", "Branco e vermelho", "Azul", "Vermelho"],
     lifeExpectancy: "12 a 15 anos",
     adultWeightKg: { male: "25 a 32 kg", female: "18 a 25 kg" },
     classification: ["Companhia", "Pastoreio"],
