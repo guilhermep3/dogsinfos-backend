@@ -13,8 +13,8 @@ export const dogsService = {
     return dogsRepositories.findWithFilters(filters, page, limit);
   },
 
-  getDogById(id: number) {
-    return dogsRepositories.findById(id);
+  getDogBySlug(slug: string) {
+    return dogsRepositories.findBySlug(slug);
   },
 
   searchByBreed(breed: string) {

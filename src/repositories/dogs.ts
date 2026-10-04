@@ -77,6 +77,9 @@ export const dogsRepositories = {
   findById(id: number) {
     return dogsData.find(d => d.id === id);
   },
+  findBySlug(slug: string) {
+    return dogsData.find(d => d.slug === slug);
+  },
   findByBreed(breed: string) {
     return dogsData.filter(d =>
       d.breed.toLowerCase().includes(breed.toLowerCase())

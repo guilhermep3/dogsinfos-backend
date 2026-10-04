@@ -47,13 +47,13 @@ export const searchDogs = (req: Request, res: Response) => {
 };
 
 export const getDogDetails = (req: Request, res: Response) => {
-  const id = Number(req.params.id);
+  const slug = String(req.params.slug);
 
-  if (!id) {
-    return res.status(400).json({ error: "Invalid ID" });
+  if (!slug) {
+    return res.status(400).json({ error: "Invalid slug" });
   }
 
-  const dog = dogsService.getDogById(id);
+  const dog = dogsService.getDogBySlug(slug);
 
   if (!dog) {
     return res.status(404).json({ error: "Dog not found" });
