@@ -25,8 +25,8 @@ export const uploadDogsImages = async () => {
         folder: "dogs",
       });
 
-      console.log(`Upload feito: ${file}`);
-      console.log(result.secure_url);
+      // console.log(`Upload feito: ${file}`);
+      // console.log(result.secure_url);
     }
 
     console.log("✅ Todos os uploads finalizados");
