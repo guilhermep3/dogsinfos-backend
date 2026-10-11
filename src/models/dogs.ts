@@ -13,6 +13,11 @@ export type DogData = {
     male: { min: number; max: number };
     female: { min: number; max: number }
   };
+  coat: {
+    density: number;
+    length: number;
+    shedding: number;
+  };
   classification: string[];
   description: string;
 };
@@ -28,6 +33,11 @@ export const dogsData: DogData[] = [
     colors: ["Preto", "Marrom", "Caramelo"],
     lifeExpectancy: { min: 10, max: 12 },
     adultWeightKg: { male: { min: 29, max: 36 }, female: { min: 25, max: 32 } },
+    coat: {
+      density: 3,
+      length: 1,
+      shedding: 3,
+    },
     classification: ["Companhia", "Assistência"],
     description: "O Labrador é dócil, brincalhão e inteligente, ideal para famílias ativas. Vive bem em casas com quintal e adora água e brincadeiras ao ar livre."
   },
@@ -41,6 +51,11 @@ export const dogsData: DogData[] = [
     colors: ["Dourado"],
     lifeExpectancy: { min: 10, max: 12 },
     adultWeightKg: { male: { min: 29, max: 34 }, female: { min: 25, max: 29 } },
+    coat: {
+      density: 3,
+      length: 3,
+      shedding: 3,
+    },
     classification: ["Companhia", "Assistência"],
     description: "O Golden é afetuoso, calmo e excelente com crianças. Se adapta a espaços maiores e precisa de exercícios diários para manter a saúde física e mental."
   },
@@ -54,6 +69,11 @@ export const dogsData: DogData[] = [
     colors: ["Branco", "Preto", "Marrom", "Cinza", "Dourado", "Laranja"],
     lifeExpectancy: { min: 12, max: 15 },
     adultWeightKg: { male: { min: 6, max: 12 }, female: { min: 6, max: 10 } },
+    coat: {
+      density: 3,
+      length: 2,
+      shedding: 1,
+    },
     classification: ["Companhia", "Competições de agilidade"],
     description: "O Poodle é inteligente, hipoalergênico e aprende comandos com facilidade. Ideal para apartamentos, desde que tenha estímulos mentais e caminhadas regulares."
   },
@@ -67,6 +87,11 @@ export const dogsData: DogData[] = [
     colors: ["Tigrado", "Preto", "Branco", "Cinza"],
     lifeExpectancy: { min: 10, max: 12 },
     adultWeightKg: { male: { min: 9, max: 14 }, female: { min: 8, max: 12 } },
+    coat: {
+      density: 2,
+      length: 1,
+      shedding: 1,
+    },
     classification: ["Companhia"],
     description: "Afetuoso e tranquilo, o Bulldog Francês adora companhia humana. Vive muito bem em apartamentos, mas exige atenção por causa de problemas respiratórios."
   },
@@ -80,6 +105,11 @@ export const dogsData: DogData[] = [
     colors: ["Branco", "Caramelo", "Tigrado", "Vermelho"],
     lifeExpectancy: { min: 8, max: 10 },
     adultWeightKg: { male: { min: 23, max: 25 }, female: { min: 18, max: 23 } },
+    coat: {
+      density: 2,
+      length: 1,
+      shedding: 2,
+    },
     classification: ["Companhia"],
     description: "O Bulldog Inglês é calmo e companheiro, ideal para lares tranquilos. Adapta-se bem a apartamentos, mas requer cuidados com calor e exercícios leves."
   },
@@ -93,6 +123,11 @@ export const dogsData: DogData[] = [
     colors: ["Preto e marrom", "Cinza", "Preto"],
     lifeExpectancy: { min: 9, max: 13 },
     adultWeightKg: { male: { min: 30, max: 40 }, female: { min: 22, max: 32 } },
+    coat: {
+      density: 3,
+      length: 2,
+      shedding: 3,
+    },
     classification: ["Guarda", "Resgate", "Companhia"],
     description: "Leal, protetor e inteligente, o Pastor Alemão é excelente para guarda e resgate. Precisa de espaço e atividades, sendo mais adequado a casas com quintal ou áreas abertas."
   },
@@ -106,6 +141,11 @@ export const dogsData: DogData[] = [
     colors: ["Marrom", "Branco", "Preto", "Tricolor"],
     lifeExpectancy: { min: 12, max: 15 },
     adultWeightKg: { male: { min: 10, max: 14 }, female: { min: 9, max: 12 } },
+    coat: {
+      density: 2,
+      length: 1,
+      shedding: 2,
+    },
     classification: ["Caça", "Companhia"],
     description: "O Beagle é curioso, sociável e enérgico. Se adapta a casas e apartamentos com rotina ativa, mas requer atenção por seu faro aguçado e tendência a fugir."
   },
@@ -119,6 +159,11 @@ export const dogsData: DogData[] = [
     colors: ["Preto e marrom"],
     lifeExpectancy: { min: 8, max: 10 },
     adultWeightKg: { male: { min: 50, max: 60 }, female: { min: 35, max: 48 } },
+    coat: {
+      density: 3,
+      length: 1,
+      shedding: 2,
+    },
     classification: ["Guarda", "Companhia"],
     description: "O Rottweiler é forte, leal e protetor. Ideal para casas com espaço e donos experientes; precisa de socialização e adestramento desde cedo."
   },
@@ -132,6 +177,11 @@ export const dogsData: DogData[] = [
     colors: ["Cinza", "Dourado", "Preto"],
     lifeExpectancy: { min: 13, max: 16 },
     adultWeightKg: { male: { min: 2, max: 3 }, female: { min: 2, max: 3 } },
+    coat: {
+      density: 2,
+      length: 3,
+      shedding: 1,
+    },
     classification: ["Companhia"],
     description: "Pequeno, valente e elegante, o Yorkshire é ótimo para apartamentos. Precisa de escovação frequente e adora estar no colo do tutor."
   },
@@ -145,6 +195,11 @@ export const dogsData: DogData[] = [
     colors: ["Branco", "Marrom", "Preto", "Dourado", "Cinza"],
     lifeExpectancy: { min: 10, max: 16 },
     adultWeightKg: { male: { min: 4, max: 7 }, female: { min: 4, max: 7 } },
+    coat: {
+      density: 3,
+      length: 3,
+      shedding: 1,
+    },
     classification: ["Companhia"],
     description: "O Shih Tzu é dócil, sociável e muito apegado à família. Ideal para apartamentos, exige cuidados com os pelos e olhos sensíveis."
   },
@@ -158,6 +213,11 @@ export const dogsData: DogData[] = [
     colors: ["Preto e branco", "Tricolor", "Marrom e branco"],
     lifeExpectancy: { min: 12, max: 15 },
     adultWeightKg: { male: { min: 16, max: 20 }, female: { min: 14, max: 18 } },
+    coat: {
+      density: 3,
+      length: 3,
+      shedding: 3,
+    },
     classification: ["Assistência", "Companhia"],
     description: "Extremamente inteligente e ágil, o Border Collie é ideal para quem mora no campo ou tem espaço para atividades intensas. Não se adapta bem à vida sedentária."
   },
@@ -171,6 +231,11 @@ export const dogsData: DogData[] = [
     colors: ["Marrom", "Preto e marrom", "Vermelho", "Tigrado"],
     lifeExpectancy: { min: 12, max: 16 },
     adultWeightKg: { male: { min: 7, max: 14 }, female: { min: 7, max: 12 } },
+    coat: {
+      density: 2,
+      length: 1,
+      shedding: 2,
+    },
     classification: ["Caça", "Companhia"],
     description: "Destemido e divertido, o Dachshund adora cavar e seguir trilhas. Vive bem em apartamentos, mas precisa de cuidados com a coluna e caminhadas leves."
   },
@@ -178,12 +243,17 @@ export const dogsData: DogData[] = [
     id: 13,
     slug: "boxer",
     breed: "Boxer",
-    image: "v1777845018/dogs/tjv1geepxvp5vzbh66x0.jpg",
+    image: "v1777845017/dogs/ordupsewd8fi5vonou7f.jpg",
     size: "Grande",
     countryOrigin: "Alemanha",
     colors: ["Caramelo", "Tigrado", "Branco"],
     lifeExpectancy: { min: 10, max: 12 },
     adultWeightKg: { male: { min: 28, max: 32 }, female: { min: 25, max: 29 } },
+    coat: {
+      density: 2,
+      length: 1,
+      shedding: 2,
+    },
     classification: ["Guarda", "Companhia"],
     description: "O Boxer é brincalhão, fiel e cheio de energia. Ideal para casas com quintal e tutores que gostam de atividades ao ar livre."
   },
@@ -197,6 +267,11 @@ export const dogsData: DogData[] = [
     colors: ["Preto e marrom", "Marrom", "Azul"],
     lifeExpectancy: { min: 10, max: 13 },
     adultWeightKg: { male: { min: 40, max: 45 }, female: { min: 30, max: 35 } },
+    coat: {
+      density: 2,
+      length: 1,
+      shedding: 2,
+    },
     classification: ["Guarda", "Companhia"],
     description: "Elegante, protetor e obediente, o Doberman é ótimo para guarda. Requer espaço, liderança firme e atenção constante."
   },
@@ -210,6 +285,11 @@ export const dogsData: DogData[] = [
     colors: ["Cinza", "Preto e branco", "Vermelho", "Branco"],
     lifeExpectancy: { min: 12, max: 14 },
     adultWeightKg: { male: { min: 23, max: 27 }, female: { min: 16, max: 23 } },
+    coat: {
+      density: 3,
+      length: 2,
+      shedding: 3,
+    },
     classification: ["Companhia", "Competições de agilidade"],
     description: "Independente e energético, o Husky adora correr e é sensível ao calor. Prefere ambientes frios e espaços amplos, como casas com quintal."
   },
@@ -223,6 +303,11 @@ export const dogsData: DogData[] = [
     colors: ["Marrom", "Preto", "Branco", "Dourado", "Mesclado"],
     lifeExpectancy: { min: 14, max: 17 },
     adultWeightKg: { male: { min: 1.5, max: 3 }, female: { min: 1.5, max: 3 } },
+    coat: {
+      density: 2,
+      length: 1,
+      shedding: 2,
+    },
     classification: ["Companhia"],
     description: "Pequeno e alerta, o Chihuahua é ideal para apartamentos e tutores tranquilos. Gosta de colo, mas pode ser desconfiado com estranhos."
   },
@@ -236,6 +321,11 @@ export const dogsData: DogData[] = [
     colors: ["Caramelo", "Preto", "Cinza", "Bege"],
     lifeExpectancy: { min: 12, max: 15 },
     adultWeightKg: { male: { min: 6, max: 9 }, female: { min: 6, max: 8 } },
+    coat: {
+      density: 2,
+      length: 1,
+      shedding: 3,
+    },
     classification: ["Companhia"],
     description: "Afetuoso e divertido, o Pug é perfeito para apartamentos. Requer atenção com a respiração e não tolera muito calor ou exercícios intensos."
   },
@@ -249,6 +339,11 @@ export const dogsData: DogData[] = [
     colors: ["Preto", "Caramelo", "Branco", "Mesclado"],
     lifeExpectancy: { min: 12, max: 16 },
     adultWeightKg: { male: { min: 12, max: 25 }, female: { min: 10, max: 20 } },
+    coat: {
+      density: 2,
+      length: 1,
+      shedding: 2,
+    },
     classification: ["Companhia", "Guarda"],
     description: "Versátil, resistente e amoroso, o Vira-lata se adapta bem a diferentes ambientes. Cada um tem uma personalidade única, ideal para quem busca um companheiro fiel."
   },
@@ -262,6 +357,11 @@ export const dogsData: DogData[] = [
     colors: ["Dourado", "Preto", "Marrom", "Tricolor", "Azul"],
     lifeExpectancy: { min: 12, max: 15 },
     adultWeightKg: { male: { min: 13, max: 15 }, female: { min: 12, max: 14 } },
+    coat: {
+      density: 3,
+      length: 3,
+      shedding: 2,
+    },
     classification: ["Caça", "Companhia"],
     description: "Meigo e sociável, o Cocker é ótimo para crianças e vive bem em apartamentos ou casas. Precisa de escovação frequente e passeios diários."
   },
@@ -275,6 +375,11 @@ export const dogsData: DogData[] = [
     colors: ["Branco"],
     lifeExpectancy: { min: 12, max: 15 },
     adultWeightKg: { male: { min: 3, max: 4 }, female: { min: 3, max: 4 } },
+    coat: {
+      density: 3,
+      length: 3,
+      shedding: 1,
+    },
     classification: ["Companhia"],
     description: "Delicado e muito apegado, o Maltês se adapta bem a apartamentos. Seus pelos exigem escovação constante, e ele adora colo e atenção."
   },
@@ -288,6 +393,11 @@ export const dogsData: DogData[] = [
     colors: ["Caramelo", "Tigrado", "Preto"],
     lifeExpectancy: { min: 9, max: 11 },
     adultWeightKg: { male: { min: 50, max: 60 }, female: { min: 40, max: 50 } },
+    coat: {
+      density: 2,
+      length: 1,
+      shedding: 2,
+    },
     classification: ["Guarda", "Caça"],
     description: "Imponente e territorialista, o Fila exige espaço, adestramento e socialização. Ideal para grandes propriedades e tutores experientes."
   },
@@ -301,6 +411,11 @@ export const dogsData: DogData[] = [
     colors: ["Tricolor"],
     lifeExpectancy: { min: 13, max: 16 },
     adultWeightKg: { male: { min: 7, max: 10 }, female: { min: 6, max: 9 } },
+    coat: {
+      density: 2,
+      length: 1,
+      shedding: 2,
+    },
     classification: ["Companhia", "Competições de agilidade"],
     description: "Ágil, leal e muito esperto, o Fox Paulistinha é ótimo para quem vive em casas ou apartamentos com rotina ativa. Ama brincar e aprender truques."
   },
@@ -314,6 +429,11 @@ export const dogsData: DogData[] = [
     colors: ["Laranja", "Branco", "Preto", "Marrom", "Bege"],
     lifeExpectancy: { min: 12, max: 16 },
     adultWeightKg: { male: { min: 1.5, max: 3.5 }, female: { min: 1.5, max: 3 } },
+    coat: {
+      density: 3,
+      length: 3,
+      shedding: 3,
+    },
     classification: ["Companhia"],
     description: "Pequeno, animado e muito apegado ao tutor, o Spitz Alemão é ideal para apartamentos. Gosta de atenção e cuidados com os pelos são essenciais para manter sua beleza."
   },
@@ -327,6 +447,11 @@ export const dogsData: DogData[] = [
     colors: ["Preto", "Branco", "Caramelo", "Tigrado", "Cinza"],
     lifeExpectancy: { min: 12, max: 14 },
     adultWeightKg: { male: { min: 16, max: 30 }, female: { min: 14, max: 27 } },
+    coat: {
+      density: 2,
+      length: 1,
+      shedding: 2,
+    },
     classification: ["Companhia", "Guarda"],
     description: "Forte, leal e inteligente, o Pitbull é um excelente companheiro para tutores firmes e ativos. Requer socialização desde cedo e vive melhor em casas com espaço para se exercitar."
   },
@@ -340,6 +465,11 @@ export const dogsData: DogData[] = [
     colors: ["Preto e branco", "Marrom e branco"],
     lifeExpectancy: { min: 10, max: 13 },
     adultWeightKg: { male: { min: 24, max: 32 }, female: { min: 22, max: 28 } },
+    coat: {
+      density: 2,
+      length: 1,
+      shedding: 3,
+    },
     classification: ["Companhia", "Guarda", "Caça"],
     description: "O Dálmata é um cão enérgico e extrovertido, famoso por sua pelagem manchada. Ele é excelente para famílias ativas e precisa de bastante exercício para se manter saudável e feliz. Seu instinto protetor e lealdade fazem dele um ótimo companheiro."
   },
@@ -353,6 +483,11 @@ export const dogsData: DogData[] = [
     colors: ["Dourado", "Preto", "Branco", "Mesclado", "Cinza"],
     lifeExpectancy: { min: 12, max: 15 },
     adultWeightKg: { male: { min: 6, max: 8 }, female: { min: 5, max: 7 } },
+    coat: {
+      density: 3,
+      length: 3,
+      shedding: 1,
+    },
     classification: ["Companhia"],
     description: "Independente, calmo e protetor, o Lhasa Apso vive muito bem em apartamentos. Exige escovação frequente e costuma ser reservado com estranhos."
   },
@@ -366,6 +501,11 @@ export const dogsData: DogData[] = [
     colors: ["Vermelho", "Branco", "Tigrado", "Bege"],
     lifeExpectancy: { min: 10, max: 13 },
     adultWeightKg: { male: { min: 40, max: 50 }, female: { min: 30, max: 40 } },
+    coat: {
+      density: 3,
+      length: 2,
+      shedding: 3,
+    },
     classification: ["Guarda", "Companhia"],
     description: "Silencioso, fiel e imponente, o Akita Inu é indicado para tutores experientes. Vive melhor em locais espaçosos e com socialização adequada desde filhote."
   },
@@ -379,6 +519,11 @@ export const dogsData: DogData[] = [
     colors: ["Rosa", "Cinza", "Preto", "Branco", "Manchado"],
     lifeExpectancy: { min: 13, max: 15 },
     adultWeightKg: { male: { min: 3, max: 6 }, female: { min: 3, max: 5 } },
+    coat: {
+      density: 1,
+      length: 1,
+      shedding: 1,
+    },
     classification: ["Companhia"],
     description: "Exótico, brincalhão e afetuoso, o Cão de Crista Chinês é ideal para apartamentos e lares tranquilos. Exige cuidados com a pele, principalmente se for da variedade sem pelos."
   },
@@ -392,6 +537,11 @@ export const dogsData: DogData[] = [
     colors: ["Cinza"],
     lifeExpectancy: { min: 10, max: 13 },
     adultWeightKg: { male: { min: 30, max: 40 }, female: { min: 25, max: 35 } },
+    coat: {
+      density: 2,
+      length: 1,
+      shedding: 2,
+    },
     classification: ["Caça", "Companhia"],
     description: "Elegante, atlético e inteligente, o Weimaraner precisa de muito exercício e estímulo mental. Vive melhor em casas com quintal e com tutores ativos."
   },
@@ -399,13 +549,18 @@ export const dogsData: DogData[] = [
     id: 30,
     slug: "sao-bernardo",
     breed: "São Bernardo",
-    image: 'v1777845047/dogs/nh8ycc3fnuh9erkwkdy8.jpg',
-    size: 'Grande',
-    countryOrigin: 'Suíça',
-    colors: ['Marrom e branco', 'Branco e vermelho', 'Tigrado'],
+    image: "v1777845047/dogs/nh8ycc3fnuh9erkwkdy8.jpg",
+    size: "Grande",
+    countryOrigin: "Suíça",
+    colors: ["Marrom e branco", "Branco e vermelho", "Tigrado"],
     lifeExpectancy: { min: 8, max: 10 },
     adultWeightKg: { male: { min: 65, max: 80 }, female: { min: 55, max: 70 } },
-    classification: ['Guarda', 'Companhia', 'Resgate'],
+    coat: {
+      density: 3,
+      length: 3,
+      shedding: 3,
+    },
+    classification: ["Guarda", "Companhia", "Resgate"],
     description: "Gentil, paciente e protetor, o São Bernardo é ideal para casas espaçosas ou zonas rurais. Apesar do tamanho imponente, é excelente com crianças, mas precisa de espaço, escovação regular e atenção ao calor."
   },
   {
@@ -418,6 +573,11 @@ export const dogsData: DogData[] = [
     colors: ["Preto", "Marrom", "Tigrado"],
     lifeExpectancy: { min: 12, max: 14 },
     adultWeightKg: { male: { min: 25, max: 30 }, female: { min: 25, max: 30 } },
+    coat: {
+      density: 3,
+      length: 3,
+      shedding: 3,
+    },
     classification: ["Guarda", "Trabalho"],
     description: "O Pastor Belga é ágil, inteligente e muito leal. Usado em forças policiais, exige atividades físicas e mentais diárias."
   },
@@ -431,6 +591,11 @@ export const dogsData: DogData[] = [
     colors: ["Preto e marrom", "Marrom", "Caramelo"],
     lifeExpectancy: { min: 12, max: 15 },
     adultWeightKg: { male: { min: 3, max: 5 }, female: { min: 3, max: 5 } },
+    coat: {
+      density: 2,
+      length: 1,
+      shedding: 2,
+    },
     classification: ["Companhia"],
     description: "Valente e energético, o Pinscher é um ótimo cão de alerta. Requer socialização desde filhote para evitar comportamento agressivo."
   },
@@ -444,6 +609,11 @@ export const dogsData: DogData[] = [
     colors: ["Branco"],
     lifeExpectancy: { min: 10, max: 12 },
     adultWeightKg: { male: { min: 40, max: 45 }, female: { min: 40, max: 45 } },
+    coat: {
+      density: 2,
+      length: 1,
+      shedding: 2,
+    },
     classification: ["Caça", "Guarda"],
     description: "O Dogo Argentino é uma raça forte e atlética, criada originalmente na Argentina para caça de animais grandes como javalis. É corajoso, leal e protetor, exigindo um tutor experiente, com socialização e adestramento desde cedo. Apesar de sua aparência intimidadora, pode ser afetuoso com a família."
   },
@@ -457,6 +627,11 @@ export const dogsData: DogData[] = [
     colors: ["Preto e branco", "Tigrado", "Marrom e branco"],
     lifeExpectancy: { min: 11, max: 13 },
     adultWeightKg: { male: { min: 8, max: 11 }, female: { min: 6, max: 9 } },
+    coat: {
+      density: 2,
+      length: 1,
+      shedding: 2,
+    },
     classification: ["Companhia"],
     description: "Afetuoso, brincalhão e sociável, o Boston Terrier se adapta bem a apartamentos e é ideal para famílias."
   },
@@ -470,6 +645,11 @@ export const dogsData: DogData[] = [
     colors: ["Azul", "Vermelho"],
     lifeExpectancy: { min: 12, max: 15 },
     adultWeightKg: { male: { min: 16, max: 22 }, female: { min: 14, max: 20 } },
+    coat: {
+      density: 3,
+      length: 1,
+      shedding: 3,
+    },
     classification: ["Pastoreio", "Caça"],
     description: "Ágil, inteligente e muito resistente, o Boiadeiro Australiano é excelente para atividades no field e esportes caninos."
   },
@@ -483,6 +663,11 @@ export const dogsData: DogData[] = [
     colors: ["Preto", "Cinza", "Tigrado", "Marrom"],
     lifeExpectancy: { min: 9, max: 12 },
     adultWeightKg: { male: { min: 45, max: 50 }, female: { min: 40, max: 45 } },
+    coat: {
+      density: 2,
+      length: 1,
+      shedding: 2,
+    },
     classification: ["Guarda"],
     description: "Robusto e protetor, o Cane Corso é fiel à sua família. Precisa de adestramento firme e bastante espaço."
   },
@@ -496,6 +681,11 @@ export const dogsData: DogData[] = [
     colors: ["Bege", "Preto", "Marrom", "Azul"],
     lifeExpectancy: { min: 8, max: 12 },
     adultWeightKg: { male: { min: 20, max: 25 }, female: { min: 18, max: 23 } },
+    coat: {
+      density: 2,
+      length: 1,
+      shedding: 2,
+    },
     classification: ["Companhia"],
     description: "Com rugas marcantes e personalidade reservada, o Shar Pei é calmo e fiel, mas precisa de socialização desde cedo."
   },
@@ -509,6 +699,11 @@ export const dogsData: DogData[] = [
     colors: ["Cinza", "Bege", "Caramelo", "Preto"],
     lifeExpectancy: { min: 12, max: 15 },
     adultWeightKg: { male: { min: 50, max: 66 }, female: { min: 40, max: 55 } },
+    coat: {
+      density: 3,
+      length: 2,
+      shedding: 3,
+    },
     classification: ["Guarda", "Caça", "Pastoreio"],
     description: "O Kangal é uma raça originária da Turquia, conhecida por sua força, coragem e instinto protetor. Tradicionalmente usado para proteger rebanhos, é extremamente leal à sua família. Apesar de seu tamanho imponente, é calmo, equilibrado e gentil."
   },
@@ -522,6 +717,11 @@ export const dogsData: DogData[] = [
     colors: ["Preto", "Branco", "Tigrado", "Cinza", "Preto e branco"],
     lifeExpectancy: { min: 12, max: 15 },
     adultWeightKg: { male: { min: 12, max: 15 }, female: { min: 10, max: 14 } },
+    coat: {
+      density: 2,
+      length: 1,
+      shedding: 1,
+    },
     classification: ["Corrida", "Companhia"],
     description: "Rápido, sensível e elegante, o Whippet é ótimo para quem quer um cão calmo em casa, mas com energia para correr ao ar livre."
   },
@@ -535,6 +735,11 @@ export const dogsData: DogData[] = [
     colors: ["Preto", "Branco", "Cinza", "Azul", "Tricolor"],
     lifeExpectancy: { min: 13, max: 15 },
     adultWeightKg: { male: { min: 30, max: 40 }, female: { min: 25, max: 35 } },
+    coat: {
+      density: 3,
+      length: 3,
+      shedding: 3,
+    },
     classification: ["Pastoreio", "Guarda", "Companhia"],
     description: "O Ovelheiro Gaúcho é uma raça brasileira, conhecida por sua inteligência, energia e forte instinto de pastoreio. Adaptado ao clima do sul do Brasil, é resistente, leal e excelente para trabalhar com rebanhos. Sociável com a família, mas pode ser reservado com estranhos."
   },
@@ -548,6 +753,11 @@ export const dogsData: DogData[] = [
     colors: ["Preto", "Branco", "Preto e prata"],
     lifeExpectancy: { min: 12, max: 15 },
     adultWeightKg: { male: { min: 5, max: 35 }, female: { min: 5, max: 30 } },
+    coat: {
+      density: 3,
+      length: 2,
+      shedding: 1,
+    },
     classification: ["Companhia", "Guarda"],
     description: "O Schnauzer é um cão versátil que varia de tamanho (Miniatura, Standard e Gigante). Inteligente, alerta e leal, é excelente cão de guarda. Adapta-se bem a apartamentos no caso do Schnauzer Miniatura, mas precisa de exercícios regulares."
   },
@@ -561,6 +771,11 @@ export const dogsData: DogData[] = [
     colors: ["Tricolor", "Marrom e branco", "Preto e branco"],
     lifeExpectancy: { min: 10, max: 12 },
     adultWeightKg: { male: { min: 23, max: 29 }, female: { min: 20, max: 25 } },
+    coat: {
+      density: 2,
+      length: 1,
+      shedding: 2,
+    },
     classification: ["Caça", "Companhia"],
     description: "Com orelhas longas e corpo alongado, o Basset é calmo, afetuoso e excelente farejador. Vive bem em apartamentos, mas precisa de caminhadas para evitar obesidade."
   },
@@ -574,6 +789,11 @@ export const dogsData: DogData[] = [
     colors: ["Vermelho", "Preto", "Azul", "Marrom", "Bege"],
     lifeExpectancy: { min: 9, max: 15 },
     adultWeightKg: { male: { min: 25, max: 32 }, female: { min: 20, max: 27 } },
+    coat: {
+      density: 3,
+      length: 3,
+      shedding: 3,
+    },
     classification: ["Companhia", "Guarda"],
     description: "Independente, territorial e com aparência de leão, o Chow Chow é reservado com estranhos. Precisa de socialização precoce e não tolera bem o calor."
   },
@@ -587,6 +807,11 @@ export const dogsData: DogData[] = [
     colors: ["Branco", "Marrom e branco", "Tricolor"],
     lifeExpectancy: { min: 13, max: 16 },
     adultWeightKg: { male: { min: 6, max: 8 }, female: { min: 5, max: 7 } },
+    coat: {
+      density: 2,
+      length: 1,
+      shedding: 2,
+    },
     classification: ["Caça", "Companhia"],
     description: "Enérgico, corajoso e muito esperto, o Jack Russell precisa de bastante exercício. Ideal para tutores ativos que gostem de aventuras."
   },
@@ -600,6 +825,11 @@ export const dogsData: DogData[] = [
     colors: ["Preto", "Marrom", "Cinza", "Preto e branco"],
     lifeExpectancy: { min: 8, max: 10 },
     adultWeightKg: { male: { min: 60, max: 70 }, female: { min: 45, max: 55 } },
+    coat: {
+      density: 3,
+      length: 3,
+      shedding: 3,
+    },
     classification: ["Resgate", "Companhia"],
     description: "Gentil gigante, excelente nadador e protetor de crianças. Precisa de espaço amplo e não se adapta bem ao calor. Requer escovação frequente."
   },
@@ -613,6 +843,11 @@ export const dogsData: DogData[] = [
     colors: ["Vermelho", "Preto", "Branco", "Marrom"],
     lifeExpectancy: { min: 12, max: 15 },
     adultWeightKg: { male: { min: 9, max: 10 }, female: { min: 8, max: 9 } },
+    coat: {
+      density: 3,
+      length: 2,
+      shedding: 3,
+    },
     classification: ["Companhia"],
     description: "O Shiba Inu é um cão japonês, conhecido por sua aparência de raposa, personalidade independente e leal. Ele é inteligente e pode ser reservado com estranhos, mas é muito apegado à família. Adapta-se bem a apartamentos, desde que tenha exercícios e estímulo mental frequentes."
   },
@@ -626,6 +861,11 @@ export const dogsData: DogData[] = [
     colors: ["Preto e branco", "Marrom e branco", "Tricolor"],
     lifeExpectancy: { min: 12, max: 16 },
     adultWeightKg: { male: { min: 3, max: 4 }, female: { min: 3, max: 4 } },
+    coat: {
+      density: 2,
+      length: 3,
+      shedding: 2,
+    },
     classification: ["Companhia"],
     description: "O Papillon é um cão pequeno e elegante, conhecido por suas orelhas em forma de borboleta. É inteligente, sociável e se adapta bem a apartamentos, desde que tenha exercícios e estímulo mental frequentes."
   },
@@ -639,6 +879,11 @@ export const dogsData: DogData[] = [
     colors: ["Branco", "Bege"],
     lifeExpectancy: { min: 12, max: 14 },
     adultWeightKg: { male: { min: 25, max: 30 }, female: { min: 20, max: 25 } },
+    coat: {
+      density: 3,
+      length: 3,
+      shedding: 3,
+    },
     classification: ["Companhia", "Trabalho"],
     description: "A Samoieda é um cão de porte grande, conhecida por sua pelagem densa e seu famoso 'sorriso'. É inteligente, leal e sociável, adaptando-se bem a ambientes frios. Precisa de exercícios diários e escovação frequente."
   },
@@ -652,6 +897,11 @@ export const dogsData: DogData[] = [
     colors: ["Tricolor", "Preto e branco", "Branco e vermelho", "Azul", "Vermelho"],
     lifeExpectancy: { min: 12, max: 15 },
     adultWeightKg: { male: { min: 25, max: 32 }, female: { min: 18, max: 25 } },
+    coat: {
+      density: 3,
+      length: 3,
+      shedding: 3,
+    },
     classification: ["Companhia", "Pastoreio"],
     description: "O Pastor Australiano é um cão extremamente inteligente, energético e leal. Apesar do nome, foi desenvolvido nos Estados Unidos para pastoreio. Excelente para esportes caninos, precisa de muito exercício e estímulo mental diariamente."
   },
@@ -665,6 +915,11 @@ export const dogsData: DogData[] = [
     colors: ["Tigrado", "Preto", "Branco", "Marrom"],
     lifeExpectancy: { min: 12, max: 14 },
     adultWeightKg: { male: { min: 10, max: 12 }, female: { min: 9, max: 11 } },
+    coat: {
+      density: 2,
+      length: 1,
+      shedding: 1,
+    },
     classification: ["Companhia"],
     description: "O Basenji é conhecido como o 'cão que não late', emitindo um som peculiar parecido com um yodel. É independente, limpo (comportamento de gato) e curioso. Precisa de exercícios e tem forte instinto de caça."
   }
